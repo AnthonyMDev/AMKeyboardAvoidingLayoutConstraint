@@ -1,0 +1,17 @@
+PODS:
+  - AMKeyboardAvoidingLayoutConstraint (0.1.0)
+  - Nimble (3.0.0)
+
+DEPENDENCIES:
+  - AMKeyboardAvoidingLayoutConstraint (from `../`)
+  - Nimble (~> 3.0)
+
+EXTERNAL SOURCES:
+  AMKeyboardAvoidingLayoutConstraint:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AMKeyboardAvoidingLayoutConstraint: ef68d23a4f839b87a50765fe48ac4b297e5edcf7
+  Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
+
+COCOAPODS: 0.39.0

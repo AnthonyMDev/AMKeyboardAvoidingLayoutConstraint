@@ -7,6 +7,6 @@ end
 
 target 'AMKeyboardAvoidingLayoutConstraint_Tests', :exclusive => true do
   pod "AMKeyboardAvoidingLayoutConstraint", :path => "../"
-
-  pod 'FBSnapshotTestCase'
+  
+  pod 'Nimble', '~> 3.0'
 end

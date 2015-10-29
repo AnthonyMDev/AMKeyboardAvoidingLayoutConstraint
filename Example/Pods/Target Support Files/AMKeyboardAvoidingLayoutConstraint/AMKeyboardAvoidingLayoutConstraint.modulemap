@@ -1,0 +1,6 @@
+framework module AMKeyboardAvoidingLayoutConstraint {
+  umbrella header "AMKeyboardAvoidingLayoutConstraint-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="AMKeyboardAvoidingLayoutConstraint_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,10 +17,61 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7sW-Pp-dP4">
+                                <rect key="frame" x="225" y="475" width="150" height="125"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This view will avoid the keyboard" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bj2-dc-jfR">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="125"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="2Sd-zr-lN4"/>
+                                    <constraint firstAttribute="bottom" secondItem="Bj2-dc-jfR" secondAttribute="bottom" id="DzC-Kt-rsA"/>
+                                    <constraint firstAttribute="trailing" secondItem="Bj2-dc-jfR" secondAttribute="trailing" id="Jci-fx-WKi"/>
+                                    <constraint firstItem="Bj2-dc-jfR" firstAttribute="top" secondItem="7sW-Pp-dP4" secondAttribute="top" id="daX-cC-Zmg"/>
+                                    <constraint firstAttribute="width" constant="150" id="k81-eA-hCE"/>
+                                    <constraint firstItem="Bj2-dc-jfR" firstAttribute="leading" secondItem="7sW-Pp-dP4" secondAttribute="leading" id="tQr-dz-q0k"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wle-aa-Sq7">
+                                <rect key="frame" x="20" y="45" width="560" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="wle-aa-Sq7" secondAttribute="trailing" id="1Re-X0-lve"/>
+                            <constraint firstItem="wle-aa-Sq7" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="25" id="COD-zV-O53"/>
+                            <constraint firstItem="7sW-Pp-dP4" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="F3I-9b-XP2"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="7sW-Pp-dP4" secondAttribute="bottom" id="Gkl-8I-ngd" customClass="KeyboardAvoidingLayoutConstraint" customModule="AMKeyboardAvoidingLayoutConstraint">
+                                <connections>
+                                    <outlet property="pinnedView" destination="7sW-Pp-dP4" id="gff-OG-kut"/>
+                                </connections>
+                            </constraint>
+                            <constraint firstItem="wle-aa-Sq7" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="JvI-Lj-pYa"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="j4g-r8-9lg" appends="YES" id="iOp-Hi-YpL"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="j4g-r8-9lg">
+                    <connections>
+                        <action selector="didTapView:" destination="vXZ-lx-hvc" id="0x0-jp-iBc"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
         </scene>
     </scenes>

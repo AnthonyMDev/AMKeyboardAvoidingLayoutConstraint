@@ -1,0 +1,25 @@
+{
+  "name": "AMKeyboardAvoidingLayoutConstraint",
+  "version": "0.1.0",
+  "summary": "A short description of AMKeyboardAvoidingLayoutConstraint.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/AMKeyboardAvoidingLayoutConstraint",
+  "license": "MIT",
+  "authors": {
+    "Anthony Miller": "anthony@app-order.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/AMKeyboardAvoidingLayoutConstraint.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "AMKeyboardAvoidingLayoutConstraint": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}
