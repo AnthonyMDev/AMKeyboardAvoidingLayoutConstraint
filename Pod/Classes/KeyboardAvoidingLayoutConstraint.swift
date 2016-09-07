@@ -20,7 +20,7 @@ open class KeyboardAvoidingLayoutConstraint: NSLayoutConstraint {
   /*
   *  MARK: - Object Lifecycle
   */
-  
+
   open override func awakeFromNib() {
     super.awakeFromNib()
     

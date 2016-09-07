@@ -35,6 +35,7 @@ class KeyboardAvoidingLayoutConstraintTests: XCTestCase {
       attribute: .top,
       multiplier: 1.0,
       constant: 50.0)
+    sut.pinnedView = view
     viewController.view.addConstraint(sut)
     
     window.rootViewController = viewController
