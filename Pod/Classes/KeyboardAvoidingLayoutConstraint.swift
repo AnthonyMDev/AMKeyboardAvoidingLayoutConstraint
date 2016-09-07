@@ -7,21 +7,21 @@
 
 import UIKit
 
-public class KeyboardAvoidingLayoutConstraint: NSLayoutConstraint {
+open class KeyboardAvoidingLayoutConstraint: NSLayoutConstraint {
   
   /*
   *  MARK: - Instance Variables
   */
   
-  private var originalConstant: CGFloat!
+  fileprivate var originalConstant: CGFloat!
   
-  @IBOutlet public var pinnedView: UIView!
+  @IBOutlet open var pinnedView: UIView!
   
   /*
   *  MARK: - Object Lifecycle
   */
   
-  public override func awakeFromNib() {
+  open override func awakeFromNib() {
     super.awakeFromNib()
     
     originalConstant = constant
@@ -29,35 +29,35 @@ public class KeyboardAvoidingLayoutConstraint: NSLayoutConstraint {
     registerForKeyboardNotifications()
   }
   
-  private func registerForKeyboardNotifications() {
-    NSNotificationCenter.defaultCenter().addObserver(self,
-        selector: "keyboardWillShow:",
-        name: UIKeyboardWillShowNotification,
+  fileprivate func registerForKeyboardNotifications() {
+    NotificationCenter.default.addObserver(self,
+        selector: #selector(KeyboardAvoidingLayoutConstraint.keyboardWillShow(_:)),
+        name: NSNotification.Name.UIKeyboardWillShow,
         object: pinnedView.window)
     
-    NSNotificationCenter.defaultCenter().addObserver(self,
-        selector: "keyboardWillHide:",
-        name: UIKeyboardWillHideNotification,
+    NotificationCenter.default.addObserver(self,
+        selector: #selector(KeyboardAvoidingLayoutConstraint.keyboardWillHide(_:)),
+        name: NSNotification.Name.UIKeyboardWillHide,
         object: pinnedView.window)
   }
   
   deinit {
-    NSNotificationCenter.defaultCenter().removeObserver(self)
+    NotificationCenter.default.removeObserver(self)
   }
   
   /*
   * MARK: - Show/Hide Keyboard
   */
   
-  func keyboardWillShow(notification: NSNotification) {
+  func keyboardWillShow(_ notification: Notification) {
     adjustConstantForKeyboard(true, notification: notification)
   }
   
-  func keyboardWillHide(notification: NSNotification) {
+  func keyboardWillHide(_ notification: Notification) {
     adjustConstantForKeyboard(false, notification: notification)
   }
   
-  private func adjustConstantForKeyboard(keyboardWillShow: Bool, notification: NSNotification) {
+  fileprivate func adjustConstantForKeyboard(_ keyboardWillShow: Bool, notification: Notification) {
     if let height = heightToAdjustForKeyboard(notification) {
       pinnedView.superview?.layoutIfNeeded()
       
@@ -66,25 +66,25 @@ public class KeyboardAvoidingLayoutConstraint: NSLayoutConstraint {
       } else {
         constant = originalConstant
       }
-      
-      let animationDuration: NSTimeInterval = notification.userInfo?[UIKeyboardAnimationDurationUserInfoKey]?.doubleValue ?? 0.2
-      
-      UIView.animateWithDuration(animationDuration) { [weak self] () -> Void in
+     
+        let animationDuration: TimeInterval = (notification.userInfo?[UIKeyboardAnimationDurationUserInfoKey] as? Double) ?? 0.2
+        
+      UIView.animate(withDuration: animationDuration) { [weak self] () -> Void in
         self?.pinnedView.superview?.layoutIfNeeded()
       }
     }
   }
   
-  private func heightToAdjustForKeyboard(notification: NSNotification) -> CGFloat? {
-    if let value = notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue {
-      let keyboardFrame = value.CGRectValue()
+  fileprivate func heightToAdjustForKeyboard(_ notification: Notification) -> CGFloat? {
+    if let value = (notification as NSNotification).userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue {
+      let keyboardFrame = value.cgRectValue
       var height = keyboardFrame.height
       
       if let tabBarHeight = findTabBarInWindow()?.frame.height {
         height -= tabBarHeight
       }
       
-      if let navVC = pinnedView.window?.rootViewController as? UINavigationController where navVC.toolbarHidden == false {
+      if let navVC = pinnedView.window?.rootViewController as? UINavigationController , navVC.isToolbarHidden == false {
         height -= navVC.toolbar.frame.height
       }
       
@@ -93,7 +93,7 @@ public class KeyboardAvoidingLayoutConstraint: NSLayoutConstraint {
     return nil
   }
   
-  private func findTabBarInWindow() -> UITabBar? {
+  fileprivate func findTabBarInWindow() -> UITabBar? {
     if let tabBarVC = pinnedView.window?.rootViewController as? UITabBarController {
       return tabBarVC.tabBar
       
