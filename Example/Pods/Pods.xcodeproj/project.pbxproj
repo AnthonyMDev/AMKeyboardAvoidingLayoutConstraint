@@ -7,314 +7,240 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02BF9988CC94A01E7CB6049694390020 /* NMBExceptionCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = B0641D8ED0A2F17164D65E3DEA6823D9 /* NMBExceptionCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		02DF5BD2281BA10105A447F95FCF8CF3 /* BeLogical.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1144F0A8F4E0811AB38959A69E97C02 /* BeLogical.swift */; };
-		0492354DA7EF0C9068F7B4E8F74001B0 /* FailureMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560B85EAB000115D21F3FE46854CD8C2 /* FailureMessage.swift */; };
-		0A6E71555F55082003A3DB2B03CA85D2 /* AsyncMatcherWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324B14B59A0B9F5B7C2F9C41F705955A /* AsyncMatcherWrapper.swift */; };
-		0F49254A4C560DD4696936F6080756DC /* Nimble-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FCE7F0B34E47F6B62BBE75C674A89DF4 /* Nimble-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1DCA681764516BB54DF3D8E6B23BA751 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		1E28F9362956B758C4C981D3C1129C90 /* BeGreaterThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7500F9AA5F9C8028235227E0EC271C3 /* BeGreaterThan.swift */; };
-		2D3B916F7168E9412EDB95BA203A5BB4 /* ThrowError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3B67D898EF6DE97473AA875DF4024A /* ThrowError.swift */; };
-		33264C6A7A3536AD91EF42B3E8CC8220 /* BeGreaterThanOrEqualTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C23085AD7CE67E0A9528F060919F87 /* BeGreaterThanOrEqualTo.swift */; };
-		33514FEE6EA65605EFB6F1801834B692 /* AssertionDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81604077C57D556AADEADF1D11933EC2 /* AssertionDispatcher.swift */; };
-		3A92AEE86034356AF8987F20EE1F82DF /* EndWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA06568935AD35910088C1549E91DAA3 /* EndWith.swift */; };
-		3AEAC447B09E7AABC140654C8529BC94 /* MatcherFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = B846792DEADFF0B56E371D4B09C3EB0F /* MatcherFunc.swift */; };
-		4E87C6AE24AB15700A39FC24A2F1C93B /* BeLessThanOrEqual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6ECF7A893E78E2EA057314BBF286AA /* BeLessThanOrEqual.swift */; };
-		4FCB4B3F06A3EF37089F419B7E1A5332 /* KeyboardAvoidingLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E1D2A99B4FEA4370174DE05F7271DC /* KeyboardAvoidingLayoutConstraint.swift */; };
-		512DFAE728521F02AF225F0082195DCC /* Nimble.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C3C703BBE37566F2959CC225914CC6F /* Nimble.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		581BACE82453477F60C7A5F56DE83D07 /* Pods-AMKeyboardAvoidingLayoutConstraint_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C0B0DAC20BE84575A75009843F8FF209 /* Pods-AMKeyboardAvoidingLayoutConstraint_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		58EBA2C1A43283FB2188AB1FB592D32B /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF4A4D51904F8C92D62CFA234FE2A2C /* DSL.swift */; };
-		650819D1A6C028DCC020E071F24515B3 /* AMKeyboardAvoidingLayoutConstraint.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 946487AF06733E41708C52B82A0E3346 /* AMKeyboardAvoidingLayoutConstraint.bundle */; };
-		73695FA6A6CDFBB13C0CC73C2E5126C0 /* Nimble-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A296F040F1C78028FBA11B4DEC5E430 /* Nimble-dummy.m */; };
-		7680F08C43B965EC873D26E6AD854C9F /* BeIdenticalTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DDD67ADB4C207BD67B3D5416F8537F /* BeIdenticalTo.swift */; };
-		77128C0365A98E3BAC038A915B38791C /* BeAKindOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC21004FC03E4336F121F617DA99A4F5 /* BeAKindOf.swift */; };
-		7851A62A265384743D5992F49B4550E4 /* Pods-AMKeyboardAvoidingLayoutConstraint_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 37B492A3C0A0D4D62815EAD8F4845A6C /* Pods-AMKeyboardAvoidingLayoutConstraint_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7A6E2730A25A55D8DFA74D3D7CB005EF /* BeAnInstanceOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6551775431CCF8DF5A92F24220FAB78F /* BeAnInstanceOf.swift */; };
-		7BFD25B1BB1116D8AC47E2C3874C5B76 /* ObjCMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974462EF079310381B911F9E96A8D41C /* ObjCMatcher.swift */; };
-		7DA9FF8513AA48310B15A0744A541818 /* SourceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40731620279887A678ECC782CD0CC70E /* SourceLocation.swift */; };
-		831D33A4C5C5BBC1EC158D9A236C61D7 /* NimbleXCTestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4836DC1E44AA0C0621AF76463F6B9FB2 /* NimbleXCTestHandler.swift */; };
-		8D0BF52FF564A170A3D1DE28C27B233E /* Poll.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A3D28C174932B659DF1C45799BE6BF /* Poll.swift */; };
-		9187EEC2982DB82AD8D3A7001AA647D6 /* NMBExceptionCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9C2B0BF58991B3CF3C8EBFD5130423 /* NMBExceptionCapture.m */; };
-		9341B96D63EF6C54A1F906A1BBAEAF46 /* DSL.h in Headers */ = {isa = PBXBuildFile; fileRef = A1B9390B4A12CC8CAC42C819F283BBA6 /* DSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9646787942A85613FE77F45794E9B5CD /* BeginWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99FF5D21CE35625913420BE27907630 /* BeginWith.swift */; };
-		9E7786C034F0E0A6B5F0A0E6BE7D7E4A /* BeEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176AB8EDC7328E9B4047F67A89F35EC2 /* BeEmpty.swift */; };
-		B0A26F58BA3E6222E50AE5AC883B8EAF /* DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4605C402533740EC2C8298732EB5E0 /* DSL.m */; };
-		B41E8E775408ACE233F29CE93388B270 /* Contain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A7A050FF70711F769FC816D9B0007 /* Contain.swift */; };
-		B4787EFFA78236C0BF67C0B9637285BE /* Pods-AMKeyboardAvoidingLayoutConstraint_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9A5D43A519D32D1FD7EA74AA65908E /* Pods-AMKeyboardAvoidingLayoutConstraint_Example-dummy.m */; };
-		B69BA2394BB04C06B4FBD9B3D43415FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		B905718B2501DDA22F2AE73CB6E76E6B /* BeCloseTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AC3A290ACAFFF9B99D29B1CF0361B8 /* BeCloseTo.swift */; };
-		BB4F35062294C1A461DA3CEF6306A1DB /* HaveCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CC3DE9B6085EBD065D6F1C69F0F107 /* HaveCount.swift */; };
-		BCB53F24DCADF12601B8BA90AE3190AE /* BeLessThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7682EC06BC7D33E2B4F4E3593040CA /* BeLessThan.swift */; };
-		C150157922BAEB1F93635508FB59E618 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		C4866D23C62B76F2E08F896E45BA1F76 /* AMKeyboardAvoidingLayoutConstraint-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E4109EA67DFCFFEBDC69557DDE7A529 /* AMKeyboardAvoidingLayoutConstraint-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C63AB521EA514A811A167E507C0CF9AD /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72532FB6C8823BEA2B07C11DEADDEED6 /* Expression.swift */; };
-		C9AC658F3FCB67B50E96313C2687B33D /* MatcherProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6055D96E1B84F25A647BCE02AED8FCE0 /* MatcherProtocols.swift */; };
-		CAAED5FB81DB035A9EC080917C783FA6 /* AdapterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E2FB44C5C4BDC76951882E130E955A /* AdapterProtocols.swift */; };
-		CD9D31B6063C50689EAC2A0745C282DC /* ObjCExpectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F57397E7FFC78BFA0ECB696375F14B8 /* ObjCExpectation.swift */; };
-		D429691F39B4C30A8993360FB8A3E334 /* AllPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8283E22B99B4597A564FEB6CC5B6F0 /* AllPass.swift */; };
-		D7B45D4600C6166C124C0A926EE65284 /* Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A52A33EC9E27AAAC319932136781CF5 /* Functional.swift */; };
-		D808466D7BFDCFAAC5F8711145BADDDC /* AMKeyboardAvoidingLayoutConstraint-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D923C1DFFF468D3A8BA21CB80043F7 /* AMKeyboardAvoidingLayoutConstraint-dummy.m */; };
-		DEE170DD3064F7343884A4016546B762 /* DSL+Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9992BBE26799B74210776BAC47AE52C /* DSL+Wait.swift */; };
-		E2FBD93D72DF01427486D1A6853FC689 /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30363EF0D073F03A0BC0B273BE0156F7 /* Expectation.swift */; };
-		E36C5201AE7F1CBB25F9D2E7CBFC3C20 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95190B5469818F84FAE461DA2EB8D57F /* Match.swift */; };
-		E4A1B8135E631991BF0DF2CEE16255F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		E6E7B15FAD6C56681511813DB2666478 /* AssertionRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F3284184EA9D73FCA0D5A5BA37F09D /* AssertionRecorder.swift */; };
-		EBBCD5F4F350FD5D6C5756E0C21DA4A6 /* Pods-AMKeyboardAvoidingLayoutConstraint_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EC8499677E3A25877A25F87C845B3574 /* Pods-AMKeyboardAvoidingLayoutConstraint_Tests-dummy.m */; };
-		F10FD3129985704FA1610F84FB98EDF5 /* Stringers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ABA3353ED224DCE7D6524032C71E21 /* Stringers.swift */; };
-		F1D4A8A1FC68EFA7F45945908D70A352 /* BeNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF2763599082712F6801BDD0352581A /* BeNil.swift */; };
-		FB1347627E64CA7E98C19DC985E13D95 /* Equal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC7E2CE1D83F693DA6089C05E02318F /* Equal.swift */; };
-		FFC311AC1E19A23E0EB7B1B3A7A5A744 /* RaisesException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317CCF6A7D4B328353ADFE5E7249E8A8 /* RaisesException.swift */; };
+		08EC4958125DE2F11FCEE0C99CBCBDAD /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BE0EEC4E5BD0648604532AF5D254C0 /* Errors.swift */; };
+		0A9DF4E770D4E3DDAA4F557EAF0D873A /* AdapterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB396CDF6560F33414B7787F126F118 /* AdapterProtocols.swift */; };
+		0BF9CC194586BF10DCC17291FE7C1369 /* Stringers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9299DA64CB557EB7288F80D59021BF1 /* Stringers.swift */; };
+		12813FFD1EC00FAE70E015AF7DA3070A /* DSL+Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = B868973A4E6032F6C427D0CE3A5B3EAD /* DSL+Wait.swift */; };
+		18BE9B05543405CAB182686AD883C694 /* BeNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8012E91890DCD231093413BBD99C3F68 /* BeNil.swift */; };
+		1B094CA8A6796A22AFBEC3569F5A6311 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */; };
+		1FF0AB963D7477E1F59E7F1163D4FD24 /* DSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D27F725A726004D5C859FE3816C8EFD /* DSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2887154BC17981F644900A3AB72332EA /* NMBExpectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C6E31192B7E666B43E368A4E6E09A0 /* NMBExpectation.swift */; };
+		2B44100105D5AECCDB761C58AE1B40F1 /* BeLessThanOrEqual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C75614405A523AB77100A6EA93AFABE /* BeLessThanOrEqual.swift */; };
+		2D657B0D3B5504B59F61FD056D29F3DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		2E86A0F2870D9F958C93477B2079679F /* NimbleXCTestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8F673825087119EB53F5B88D9BB31 /* NimbleXCTestHandler.swift */; };
+		318379F20C2CDE9D5778F5B3970DF1C0 /* Nimble-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5BCFCE3E26C2196B6D3F29747F278F /* Nimble-dummy.m */; };
+		3200E870090BDDD9C441A427E022269C /* BeginWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B9B769134DF16C8B3CA83B355C999 /* BeginWith.swift */; };
+		33C2039469045B8838DFF7E764E892DF /* NimbleEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5521FC8B3C2949C6DBA2310DFEE5A297 /* NimbleEnvironment.swift */; };
+		3DFE504E308576FCFA079C3EA537E37D /* CurrentTestCaseTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 04892BB8042135AF9CB93ACA26317D13 /* CurrentTestCaseTracker.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		3EE4D3F05D7A2C245D1687EFD5C72106 /* BeIdenticalTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F644EF4F56BE28313C08764909897729 /* BeIdenticalTo.swift */; };
+		417FDF770CACC4DE3939B71D0340BA8B /* MatchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E84C80A9430021DC41C55BE8BEAE433 /* MatchError.swift */; };
+		4A899D9E9D77243EA85CB743CDC496EB /* BeLogical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9974EEC49B2B88870C5465EAF460C4AD /* BeLogical.swift */; };
+		4C492DC03B3F03DF4755F6D52CCD49C0 /* BeAnInstanceOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47D1D73A4D2AF4B145117D8D4DAAF8F /* BeAnInstanceOf.swift */; };
+		4D57C8D3EED4E9D5B7A1898DB6909FE5 /* ThrowError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4F56545E50EAEB714F5701501EB5F8 /* ThrowError.swift */; };
+		4F09339E7ECBE3C937DDD34189245320 /* NMBExceptionCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = E46F07B30B528475A0394B1F098A1ADC /* NMBExceptionCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59139B839FE54C37490AF590C8315B2C /* Nimble.h in Headers */ = {isa = PBXBuildFile; fileRef = 90733B6CE810154C9016A19A5D5A94B0 /* Nimble.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C5A99B7B94AC3F093630FA7436D8CEA /* LinuxSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C828F90027E64741BC45CC4D3DFC3C2 /* LinuxSupport.swift */; };
+		64E684835B31328F3951EA022977C958 /* BeVoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058B5B717B8A88C107F389FD83AD257B /* BeVoid.swift */; };
+		677EB185F79108A99208B50AD631BC11 /* NMBStringify.m in Sources */ = {isa = PBXBuildFile; fileRef = 37BB0FD1A03540292571A49EA1E997E6 /* NMBStringify.m */; };
+		68BFD8C6F627F355EAE322A5B91F93B4 /* AssertionDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C141E2E3843EB8949DE977EAB51C2C /* AssertionDispatcher.swift */; };
+		6BB6A7AD6203FB30F598C46305E15A41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		7124840412B441F4A6C00BEF17C6343C /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA14129B102812C54C4AF94C1FDB392 /* Match.swift */; };
+		715161803229991AFEB8887A88796778 /* NMBStringify.h in Headers */ = {isa = PBXBuildFile; fileRef = 871333D762C9F0636F87493AA298B4DD /* NMBStringify.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		737DA7D8412EBE69422B7333C2FF36CB /* SourceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970CE9105988B8DB409B3E2C6699C211 /* SourceLocation.swift */; };
+		7A031C98288E089FDB3831EEBD2DEC15 /* Nimble-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3978C1443059C507EF9C0220AD4A62F6 /* Nimble-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7CEF73F686294B0288121C01B7677DEB /* Contain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D39D9A89A7AE1DA886A0BB4B4D5A8F1 /* Contain.swift */; };
+		8412BBE75EA79E7AF3FB25A58148FAD0 /* SatisfyAnyOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0898C27CFB560F99F55AC925F2BCAE /* SatisfyAnyOf.swift */; };
+		86210BCC30AFFC3B474081CBDFC4F853 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		8EA02256FF2F01603BE7F45158E4C0EE /* AMKeyboardAvoidingLayoutConstraint-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E4109EA67DFCFFEBDC69557DDE7A529 /* AMKeyboardAvoidingLayoutConstraint-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F641F882D6E0842823139133FE6F650 /* AMKeyboardAvoidingLayoutConstraint-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D923C1DFFF468D3A8BA21CB80043F7 /* AMKeyboardAvoidingLayoutConstraint-dummy.m */; };
+		9301395B98E52BB0184180B68D2ADF0D /* BeAKindOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC84740B1C85AA94248C4F6A36660EBC /* BeAKindOf.swift */; };
+		95795539DE3B6CCEFEC68F994829D05A /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EC46561EE5C58D8B0374F37A5A86BA2C /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example-dummy.m */; };
+		98F67566A289A4154786B3997C8B064C /* HaveCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = F612A5C70FC3AFD5ED169492E208CFEB /* HaveCount.swift */; };
+		9D13EE85BC38EF0FB3F5C99042BFBE0C /* KeyboardAvoidingLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E1D2A99B4FEA4370174DE05F7271DC /* KeyboardAvoidingLayoutConstraint.swift */; };
+		A236D39AE2D7784EF37667E11BE089B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		A27F6D8DCBC0F3FC25B637B73CC3D0A6 /* EndWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6948CFF137AA5E2CA74A0E512D9F8DEB /* EndWith.swift */; };
+		A54EA0C535126455D84C9FCCBD53C93C /* XCTestObservationCenter+Register.m in Sources */ = {isa = PBXBuildFile; fileRef = 0217FACFAF38C1BE8BC4D6AB28155A5B /* XCTestObservationCenter+Register.m */; };
+		ACA6415F8E0910F08E5426D4C7EA6BB4 /* BeCloseTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A8BD540875334F8C6382DEE9139073 /* BeCloseTo.swift */; };
+		AEA1BB8FFA63AA655A94FAF9357C383E /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC2F223A3295958E45D1A66BCAF582D /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests-dummy.m */; };
+		AFBBFD268D5697EAABB3F688BD48A234 /* NMBObjCMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DBAAAA500B5A5B8E6C7521D8CC4201 /* NMBObjCMatcher.swift */; };
+		B14D0874379B07C501C2920344AA3B67 /* PostNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F8E4A80F37DE30C4C3A33E159D0804 /* PostNotification.swift */; };
+		B3EA1BC5E1B9D0608A3E8C13C7DA6ADF /* BeGreaterThanOrEqualTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DE6D3E432E2688750158E11B665DE3 /* BeGreaterThanOrEqualTo.swift */; };
+		B730715CAD7A96221AF215D751349944 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DEF1EA97592C0CC511B50D9C3F719D /* Expression.swift */; };
+		B915738565089ACD69F4BA8E65C8D4BB /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AE666AF82C8ABCDCE3BA2BF6467F0C4 /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C487E95477835D3FCE4C5623C3EC83F8 /* Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8329DCEF0B358425609660C6B3EFB4CA /* Functional.swift */; };
+		CA7CB84F269703583A2E75C3F0337DD8 /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F1C98850D1ED8F3DDE84239707721D /* DSL.swift */; };
+		D866F3CB98D76106EAE8B0E584DC5E0F /* BeLessThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC0D886C1CD39ED4BA0E08768A16FAD /* BeLessThan.swift */; };
+		D8EBB26318099699C211467EF4BF88ED /* AsyncMatcherWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C6D74AC0E6A0C95CF27A21716BFAA9 /* AsyncMatcherWrapper.swift */; };
+		D92936273BD7C1E55C0F14FE1E4CD11E /* DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = FA142E1DA53950FD312E8A80961F6854 /* DSL.m */; };
+		DA6CA3D6F2ADCF81EC29C09533B23D34 /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F53403FCDC5A95C24575DA6D1C53B85 /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBD6CB0E1FE5ECBD3D3FD21100C615B5 /* AssertionRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092DE1C215B6D419EA5E987E22132998 /* AssertionRecorder.swift */; };
+		DF9369EC05676227AB2CF53BB84D5EFA /* MatcherProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D29DC779751448A95CB185B490D300 /* MatcherProtocols.swift */; };
+		E07D530A681D254583442DE085A0B1A6 /* MatcherFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7216C80F939FEC8572382C5CB167965A /* MatcherFunc.swift */; };
+		E093B708D54820412CBF06DDCE58C974 /* RaisesException.swift in Sources */ = {isa = PBXBuildFile; fileRef = F929425EA70B137FEB5B79C2C27293CA /* RaisesException.swift */; };
+		E775CE850AD181685E09D989A73AD76A /* FailureMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C545A63062ACAF096C8D1583FD76FF36 /* FailureMessage.swift */; };
+		E8CF566F16CA5F894F2CDF609ED1C515 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8E9221ECC8691E0C5EA86797E4E32E /* Async.swift */; };
+		F02537AA993B0A8E8BA0B9ED7017EB64 /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533096DE0A395A733FB2AB04869B65E9 /* Expectation.swift */; };
+		F6DBD8E46E5BC6D00FD3D7BB95D51FEB /* AllPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3822CC29ED1ED31B326CE0B019D51BAD /* AllPass.swift */; };
+		FACC2D7979CB59D81403B6B4C750A178 /* BeEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E703825EE3A8BF8AF3450C7D9F1C8B /* BeEmpty.swift */; };
+		FD034BF5A3C7B606EE60F305932040A4 /* BeGreaterThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E375774B5F84BE5892A55E8A17DC65 /* BeGreaterThan.swift */; };
+		FF6BF208488423B547BF3B8A8CC962FB /* Equal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FFE0B5F3A07E29C35D0F855450298C /* Equal.swift */; };
+		FF8FEA921275AB297FD83FA299ACBD41 /* NMBExceptionCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 5937362C9A0F87BD955126F70DC45468 /* NMBExceptionCapture.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		061E6AAD35372010FD06C21AEF8BC850 /* PBXContainerItemProxy */ = {
+		AF2E4B54FF803F0F8C7D8919E4E31AAD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 99C7BCBC84F0422A85E68E306BF665C5;
-			remoteInfo = AMKeyboardAvoidingLayoutConstraint;
-		};
-		371A275DBB3584EBB28BFD4ACF63462D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 99C7BCBC84F0422A85E68E306BF665C5;
-			remoteInfo = AMKeyboardAvoidingLayoutConstraint;
-		};
-		59FD3F46DA2C1E2AC0BF6BBAF3DBB2CD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C4F12EE343BDB76682C3EFF5FB4203E4;
-			remoteInfo = "AMKeyboardAvoidingLayoutConstraint-AMKeyboardAvoidingLayoutConstraint";
-		};
-		A2E5864056F4B8C10E1D114C4C6D2594 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C5DB5104FED3C10F78978AFC810982B9;
+			remoteGlobalIDString = 3F29A493B7BA5132E5D8B38018BF38B9;
 			remoteInfo = Nimble;
+		};
+		C72D21CD190ED4406D7BEF1ACFEE9E1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 967E8E8C778A643461800F708AF5FDA6;
+			remoteInfo = AMKeyboardAvoidingLayoutConstraint;
+		};
+		F75FFC5C8B81A22F922F5D86CDC4AE96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 967E8E8C778A643461800F708AF5FDA6;
+			remoteInfo = AMKeyboardAvoidingLayoutConstraint;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02614C798E7994B8CEB0D1EF448516CC /* Pods-AMKeyboardAvoidingLayoutConstraint_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AMKeyboardAvoidingLayoutConstraint_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		03F63B1EFC855807FFD61BA2CC3497B6 /* Nimble.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Nimble.modulemap; sourceTree = "<group>"; };
-		0A4605C402533740EC2C8298732EB5E0 /* DSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSL.m; path = Nimble/objc/DSL.m; sourceTree = "<group>"; };
-		0A52A33EC9E27AAAC319932136781CF5 /* Functional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Functional.swift; path = Nimble/Utils/Functional.swift; sourceTree = "<group>"; };
-		0C290F50523CA11EE4BC40A914714AFC /* Pods-AMKeyboardAvoidingLayoutConstraint_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AMKeyboardAvoidingLayoutConstraint_Example.modulemap"; sourceTree = "<group>"; };
-		0DA29D11CBEE6CEADAFC9F4E673DE2DE /* Nimble.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Nimble.xcconfig; sourceTree = "<group>"; };
-		0F57397E7FFC78BFA0ECB696375F14B8 /* ObjCExpectation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjCExpectation.swift; path = Nimble/ObjCExpectation.swift; sourceTree = "<group>"; };
-		10AC3A290ACAFFF9B99D29B1CF0361B8 /* BeCloseTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeCloseTo.swift; path = Nimble/Matchers/BeCloseTo.swift; sourceTree = "<group>"; };
-		176AB8EDC7328E9B4047F67A89F35EC2 /* BeEmpty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeEmpty.swift; path = Nimble/Matchers/BeEmpty.swift; sourceTree = "<group>"; };
-		1B25D85B6A4990CDDD931F308D79E23D /* Nimble-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nimble-prefix.pch"; sourceTree = "<group>"; };
-		21106AA5B465842E9EB99E2ABCB51426 /* AMKeyboardAvoidingLayoutConstraint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AMKeyboardAvoidingLayoutConstraint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		30363EF0D073F03A0BC0B273BE0156F7 /* Expectation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expectation.swift; path = Nimble/Expectation.swift; sourceTree = "<group>"; };
-		317CCF6A7D4B328353ADFE5E7249E8A8 /* RaisesException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RaisesException.swift; path = Nimble/Matchers/RaisesException.swift; sourceTree = "<group>"; };
-		31E2FB44C5C4BDC76951882E130E955A /* AdapterProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdapterProtocols.swift; path = Nimble/Adapters/AdapterProtocols.swift; sourceTree = "<group>"; };
-		324B14B59A0B9F5B7C2F9C41F705955A /* AsyncMatcherWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncMatcherWrapper.swift; path = Nimble/Wrappers/AsyncMatcherWrapper.swift; sourceTree = "<group>"; };
-		37B492A3C0A0D4D62815EAD8F4845A6C /* Pods-AMKeyboardAvoidingLayoutConstraint_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AMKeyboardAvoidingLayoutConstraint_Tests-umbrella.h"; sourceTree = "<group>"; };
-		3AC7E2CE1D83F693DA6089C05E02318F /* Equal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Equal.swift; path = Nimble/Matchers/Equal.swift; sourceTree = "<group>"; };
-		3C3DC0DAAE152914BCE632143929DD6E /* Pods-AMKeyboardAvoidingLayoutConstraint_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AMKeyboardAvoidingLayoutConstraint_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3F4EDA42A5E5D6723655EDB449C14038 /* Pods_AMKeyboardAvoidingLayoutConstraint_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMKeyboardAvoidingLayoutConstraint_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		40731620279887A678ECC782CD0CC70E /* SourceLocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SourceLocation.swift; path = Nimble/Utils/SourceLocation.swift; sourceTree = "<group>"; };
-		40967DD0E10B5C83A5695FB6AD755B32 /* Pods-AMKeyboardAvoidingLayoutConstraint_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AMKeyboardAvoidingLayoutConstraint_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		44DDD67ADB4C207BD67B3D5416F8537F /* BeIdenticalTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeIdenticalTo.swift; path = Nimble/Matchers/BeIdenticalTo.swift; sourceTree = "<group>"; };
-		4836DC1E44AA0C0621AF76463F6B9FB2 /* NimbleXCTestHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NimbleXCTestHandler.swift; path = Nimble/Adapters/NimbleXCTestHandler.swift; sourceTree = "<group>"; };
-		4AA83E2CDEBBD490F648B3353282CDF8 /* Pods-AMKeyboardAvoidingLayoutConstraint_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AMKeyboardAvoidingLayoutConstraint_Example.release.xcconfig"; sourceTree = "<group>"; };
-		4EEC4A8ADD94ECA674DBC9D71D0742D7 /* Pods-AMKeyboardAvoidingLayoutConstraint_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AMKeyboardAvoidingLayoutConstraint_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		53CC3DE9B6085EBD065D6F1C69F0F107 /* HaveCount.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HaveCount.swift; path = Nimble/Matchers/HaveCount.swift; sourceTree = "<group>"; };
-		54CED5786FD5D1E7B6F2A843A417B777 /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		560B85EAB000115D21F3FE46854CD8C2 /* FailureMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FailureMessage.swift; path = Nimble/FailureMessage.swift; sourceTree = "<group>"; };
-		56D8F5E0302285B2F47E37B3E6A5B1CD /* Pods-AMKeyboardAvoidingLayoutConstraint_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AMKeyboardAvoidingLayoutConstraint_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		5A296F040F1C78028FBA11B4DEC5E430 /* Nimble-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Nimble-dummy.m"; sourceTree = "<group>"; };
-		5C3C703BBE37566F2959CC225914CC6F /* Nimble.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Nimble.h; path = Nimble/Nimble.h; sourceTree = "<group>"; };
-		6055D96E1B84F25A647BCE02AED8FCE0 /* MatcherProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatcherProtocols.swift; path = Nimble/Matchers/MatcherProtocols.swift; sourceTree = "<group>"; };
-		6551775431CCF8DF5A92F24220FAB78F /* BeAnInstanceOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeAnInstanceOf.swift; path = Nimble/Matchers/BeAnInstanceOf.swift; sourceTree = "<group>"; };
-		6C9C2B0BF58991B3CF3C8EBFD5130423 /* NMBExceptionCapture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMBExceptionCapture.m; path = Nimble/objc/NMBExceptionCapture.m; sourceTree = "<group>"; };
-		72532FB6C8823BEA2B07C11DEADDEED6 /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Nimble/Expression.swift; sourceTree = "<group>"; };
-		72C23085AD7CE67E0A9528F060919F87 /* BeGreaterThanOrEqualTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeGreaterThanOrEqualTo.swift; path = Nimble/Matchers/BeGreaterThanOrEqualTo.swift; sourceTree = "<group>"; };
+		010D09EA7B14A862EF773CC2E746F989 /* Nimble-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nimble-prefix.pch"; sourceTree = "<group>"; };
+		0217FACFAF38C1BE8BC4D6AB28155A5B /* XCTestObservationCenter+Register.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XCTestObservationCenter+Register.m"; path = "Sources/NimbleObjectiveC/XCTestObservationCenter+Register.m"; sourceTree = "<group>"; };
+		04892BB8042135AF9CB93ACA26317D13 /* CurrentTestCaseTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CurrentTestCaseTracker.h; path = Sources/NimbleObjectiveC/CurrentTestCaseTracker.h; sourceTree = "<group>"; };
+		058B5B717B8A88C107F389FD83AD257B /* BeVoid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeVoid.swift; path = Sources/Nimble/Matchers/BeVoid.swift; sourceTree = "<group>"; };
+		07C6FF36DAABDCC8C43D354875FE77C0 /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		092DE1C215B6D419EA5E987E22132998 /* AssertionRecorder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssertionRecorder.swift; path = Sources/Nimble/Adapters/AssertionRecorder.swift; sourceTree = "<group>"; };
+		0EC0D886C1CD39ED4BA0E08768A16FAD /* BeLessThan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLessThan.swift; path = Sources/Nimble/Matchers/BeLessThan.swift; sourceTree = "<group>"; };
+		11CAF11EF706B1540B459C4FBD946586 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15C484236D61C553B7F9BA77C2CBED4F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17E375774B5F84BE5892A55E8A17DC65 /* BeGreaterThan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeGreaterThan.swift; path = Sources/Nimble/Matchers/BeGreaterThan.swift; sourceTree = "<group>"; };
+		19FACAE3B39D908AEDFAE68BB28A0C3D /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example.release.xcconfig"; sourceTree = "<group>"; };
+		1BC2F223A3295958E45D1A66BCAF582D /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests-dummy.m"; sourceTree = "<group>"; };
+		1C828F90027E64741BC45CC4D3DFC3C2 /* LinuxSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LinuxSupport.swift; path = Sources/Nimble/LinuxSupport.swift; sourceTree = "<group>"; };
+		219E50CCE636A055B28087364EC7FCBD /* AMKeyboardAvoidingLayoutConstraint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AMKeyboardAvoidingLayoutConstraint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26F1C98850D1ED8F3DDE84239707721D /* DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DSL.swift; path = Sources/Nimble/DSL.swift; sourceTree = "<group>"; };
+		37BB0FD1A03540292571A49EA1E997E6 /* NMBStringify.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMBStringify.m; path = Sources/NimbleObjectiveC/NMBStringify.m; sourceTree = "<group>"; };
+		3822CC29ED1ED31B326CE0B019D51BAD /* AllPass.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AllPass.swift; path = Sources/Nimble/Matchers/AllPass.swift; sourceTree = "<group>"; };
+		38BE40A67C5D42849226B3A214B0FFD1 /* Nimble.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Nimble.xcconfig; sourceTree = "<group>"; };
+		3978C1443059C507EF9C0220AD4A62F6 /* Nimble-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nimble-umbrella.h"; sourceTree = "<group>"; };
+		39FFE0B5F3A07E29C35D0F855450298C /* Equal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Equal.swift; path = Sources/Nimble/Matchers/Equal.swift; sourceTree = "<group>"; };
+		4C52FAA0272A58788174D1665590101F /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		4C75614405A523AB77100A6EA93AFABE /* BeLessThanOrEqual.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLessThanOrEqual.swift; path = Sources/Nimble/Matchers/BeLessThanOrEqual.swift; sourceTree = "<group>"; };
+		4D27F725A726004D5C859FE3816C8EFD /* DSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSL.h; path = Sources/NimbleObjectiveC/DSL.h; sourceTree = "<group>"; };
+		4D39D9A89A7AE1DA886A0BB4B4D5A8F1 /* Contain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Contain.swift; path = Sources/Nimble/Matchers/Contain.swift; sourceTree = "<group>"; };
+		533096DE0A395A733FB2AB04869B65E9 /* Expectation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expectation.swift; path = Sources/Nimble/Expectation.swift; sourceTree = "<group>"; };
+		5521FC8B3C2949C6DBA2310DFEE5A297 /* NimbleEnvironment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NimbleEnvironment.swift; path = Sources/Nimble/Adapters/NimbleEnvironment.swift; sourceTree = "<group>"; };
+		56A8BD540875334F8C6382DEE9139073 /* BeCloseTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeCloseTo.swift; path = Sources/Nimble/Matchers/BeCloseTo.swift; sourceTree = "<group>"; };
+		5937362C9A0F87BD955126F70DC45468 /* NMBExceptionCapture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMBExceptionCapture.m; path = Sources/NimbleObjectiveC/NMBExceptionCapture.m; sourceTree = "<group>"; };
+		5F53403FCDC5A95C24575DA6D1C53B85 /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests-umbrella.h"; sourceTree = "<group>"; };
+		65DEF1EA97592C0CC511B50D9C3F719D /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Sources/Nimble/Expression.swift; sourceTree = "<group>"; };
+		6948CFF137AA5E2CA74A0E512D9F8DEB /* EndWith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EndWith.swift; path = Sources/Nimble/Matchers/EndWith.swift; sourceTree = "<group>"; };
+		69F9934AB3E9A45C9ED9574AFA7553A0 /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example-resources.sh"; sourceTree = "<group>"; };
+		6A4F56545E50EAEB714F5701501EB5F8 /* ThrowError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThrowError.swift; path = Sources/Nimble/Matchers/ThrowError.swift; sourceTree = "<group>"; };
+		6B5BCFCE3E26C2196B6D3F29747F278F /* Nimble-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Nimble-dummy.m"; sourceTree = "<group>"; };
+		6DF7E01875167435BAE45712DFF53A80 /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests.modulemap"; sourceTree = "<group>"; };
+		6E84C80A9430021DC41C55BE8BEAE433 /* MatchError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatchError.swift; path = Sources/Nimble/Matchers/MatchError.swift; sourceTree = "<group>"; };
+		7216C80F939FEC8572382C5CB167965A /* MatcherFunc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatcherFunc.swift; path = Sources/Nimble/Matchers/MatcherFunc.swift; sourceTree = "<group>"; };
 		740BFEE7BB7F8905DA856399047611F3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		81604077C57D556AADEADF1D11933EC2 /* AssertionDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssertionDispatcher.swift; path = Nimble/Adapters/AssertionDispatcher.swift; sourceTree = "<group>"; };
+		75C6D74AC0E6A0C95CF27A21716BFAA9 /* AsyncMatcherWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncMatcherWrapper.swift; path = Sources/Nimble/Matchers/AsyncMatcherWrapper.swift; sourceTree = "<group>"; };
+		77C6E31192B7E666B43E368A4E6E09A0 /* NMBExpectation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NMBExpectation.swift; path = Sources/Nimble/Adapters/NMBExpectation.swift; sourceTree = "<group>"; };
+		7BB0CBFE5E3037DEEB0003F3B276D3C8 /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		7D94FD12432F047F1E510F48EED513C1 /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		7FA14129B102812C54C4AF94C1FDB392 /* Match.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Match.swift; path = Sources/Nimble/Matchers/Match.swift; sourceTree = "<group>"; };
+		8012E91890DCD231093413BBD99C3F68 /* BeNil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeNil.swift; path = Sources/Nimble/Matchers/BeNil.swift; sourceTree = "<group>"; };
+		8329DCEF0B358425609660C6B3EFB4CA /* Functional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Functional.swift; path = Sources/Nimble/Utils/Functional.swift; sourceTree = "<group>"; };
+		871333D762C9F0636F87493AA298B4DD /* NMBStringify.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMBStringify.h; path = Sources/NimbleObjectiveC/NMBStringify.h; sourceTree = "<group>"; };
 		8E4109EA67DFCFFEBDC69557DDE7A529 /* AMKeyboardAvoidingLayoutConstraint-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AMKeyboardAvoidingLayoutConstraint-umbrella.h"; sourceTree = "<group>"; };
+		8ED1EE33DAF1031CC0A3A2304C742B2A /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90733B6CE810154C9016A19A5D5A94B0 /* Nimble.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Nimble.h; path = Sources/Nimble/Nimble.h; sourceTree = "<group>"; };
 		92421C5B774A9337B059AA2F2234F32D /* AMKeyboardAvoidingLayoutConstraint.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AMKeyboardAvoidingLayoutConstraint.xcconfig; sourceTree = "<group>"; };
-		946487AF06733E41708C52B82A0E3346 /* AMKeyboardAvoidingLayoutConstraint.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMKeyboardAvoidingLayoutConstraint.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		95190B5469818F84FAE461DA2EB8D57F /* Match.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Match.swift; path = Nimble/Matchers/Match.swift; sourceTree = "<group>"; };
-		974462EF079310381B911F9E96A8D41C /* ObjCMatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjCMatcher.swift; path = Nimble/Wrappers/ObjCMatcher.swift; sourceTree = "<group>"; };
-		980873D4AC5ED5E968302DDC86F5C45D /* Pods-AMKeyboardAvoidingLayoutConstraint_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AMKeyboardAvoidingLayoutConstraint_Example-resources.sh"; sourceTree = "<group>"; };
-		9B8283E22B99B4597A564FEB6CC5B6F0 /* AllPass.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AllPass.swift; path = Nimble/Matchers/AllPass.swift; sourceTree = "<group>"; };
-		9E3B67D898EF6DE97473AA875DF4024A /* ThrowError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThrowError.swift; path = Nimble/Matchers/ThrowError.swift; sourceTree = "<group>"; };
-		9F6ECF7A893E78E2EA057314BBF286AA /* BeLessThanOrEqual.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLessThanOrEqual.swift; path = Nimble/Matchers/BeLessThanOrEqual.swift; sourceTree = "<group>"; };
-		9F9A5D43A519D32D1FD7EA74AA65908E /* Pods-AMKeyboardAvoidingLayoutConstraint_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AMKeyboardAvoidingLayoutConstraint_Example-dummy.m"; sourceTree = "<group>"; };
-		A1B9390B4A12CC8CAC42C819F283BBA6 /* DSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSL.h; path = Nimble/objc/DSL.h; sourceTree = "<group>"; };
-		A2ABA3353ED224DCE7D6524032C71E21 /* Stringers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stringers.swift; path = Nimble/Utils/Stringers.swift; sourceTree = "<group>"; };
-		A35A7A050FF70711F769FC816D9B0007 /* Contain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Contain.swift; path = Nimble/Matchers/Contain.swift; sourceTree = "<group>"; };
-		A7A3D28C174932B659DF1C45799BE6BF /* Poll.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Poll.swift; path = Nimble/Utils/Poll.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		970CE9105988B8DB409B3E2C6699C211 /* SourceLocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SourceLocation.swift; path = Sources/Nimble/Utils/SourceLocation.swift; sourceTree = "<group>"; };
+		97D960DCDCB18AA8E38683B216091ACC /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests-resources.sh"; sourceTree = "<group>"; };
+		985A70411C166CFE79A4FD66C53C9374 /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example-frameworks.sh"; sourceTree = "<group>"; };
+		9974EEC49B2B88870C5465EAF460C4AD /* BeLogical.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLogical.swift; path = Sources/Nimble/Matchers/BeLogical.swift; sourceTree = "<group>"; };
+		99E7B97D93DC0B4861CEB09A9AACDE34 /* Nimble.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Nimble.modulemap; sourceTree = "<group>"; };
+		9AD8F673825087119EB53F5B88D9BB31 /* NimbleXCTestHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NimbleXCTestHandler.swift; path = Sources/Nimble/Adapters/NimbleXCTestHandler.swift; sourceTree = "<group>"; };
+		9AE666AF82C8ABCDCE3BA2BF6467F0C4 /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example-umbrella.h"; sourceTree = "<group>"; };
+		9B7A1915547087AF3602DEEA782FB6A9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A23B9B769134DF16C8B3CA83B355C999 /* BeginWith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeginWith.swift; path = Sources/Nimble/Matchers/BeginWith.swift; sourceTree = "<group>"; };
+		A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A6BE0EEC4E5BD0648604532AF5D254C0 /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = Sources/Nimble/Utils/Errors.swift; sourceTree = "<group>"; };
+		A6C141E2E3843EB8949DE977EAB51C2C /* AssertionDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssertionDispatcher.swift; path = Sources/Nimble/Adapters/AssertionDispatcher.swift; sourceTree = "<group>"; };
 		A7D923C1DFFF468D3A8BA21CB80043F7 /* AMKeyboardAvoidingLayoutConstraint-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AMKeyboardAvoidingLayoutConstraint-dummy.m"; sourceTree = "<group>"; };
-		A9992BBE26799B74210776BAC47AE52C /* DSL+Wait.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DSL+Wait.swift"; path = "Nimble/DSL+Wait.swift"; sourceTree = "<group>"; };
-		A99FF5D21CE35625913420BE27907630 /* BeginWith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeginWith.swift; path = Nimble/Matchers/BeginWith.swift; sourceTree = "<group>"; };
-		AAF4A4D51904F8C92D62CFA234FE2A2C /* DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DSL.swift; path = Nimble/DSL.swift; sourceTree = "<group>"; };
+		A8D29DC779751448A95CB185B490D300 /* MatcherProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatcherProtocols.swift; path = Sources/Nimble/Matchers/MatcherProtocols.swift; sourceTree = "<group>"; };
 		ABBC7340362DF3B90C596F7901C0BCCA /* AMKeyboardAvoidingLayoutConstraint.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AMKeyboardAvoidingLayoutConstraint.modulemap; sourceTree = "<group>"; };
-		AC21004FC03E4336F121F617DA99A4F5 /* BeAKindOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeAKindOf.swift; path = Nimble/Matchers/BeAKindOf.swift; sourceTree = "<group>"; };
-		B0641D8ED0A2F17164D65E3DEA6823D9 /* NMBExceptionCapture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMBExceptionCapture.h; path = Nimble/objc/NMBExceptionCapture.h; sourceTree = "<group>"; };
-		B1144F0A8F4E0811AB38959A69E97C02 /* BeLogical.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLogical.swift; path = Nimble/Matchers/BeLogical.swift; sourceTree = "<group>"; };
-		B63A6C4A0C97327BC595DF43B7DECBF5 /* Pods-AMKeyboardAvoidingLayoutConstraint_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AMKeyboardAvoidingLayoutConstraint_Example-frameworks.sh"; sourceTree = "<group>"; };
-		B7500F9AA5F9C8028235227E0EC271C3 /* BeGreaterThan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeGreaterThan.swift; path = Nimble/Matchers/BeGreaterThan.swift; sourceTree = "<group>"; };
-		B846792DEADFF0B56E371D4B09C3EB0F /* MatcherFunc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatcherFunc.swift; path = Nimble/Wrappers/MatcherFunc.swift; sourceTree = "<group>"; };
-		B8E8535430BC13B15C81CAE3BDC923A3 /* Pods-AMKeyboardAvoidingLayoutConstraint_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AMKeyboardAvoidingLayoutConstraint_Tests-resources.sh"; sourceTree = "<group>"; };
-		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C0B0DAC20BE84575A75009843F8FF209 /* Pods-AMKeyboardAvoidingLayoutConstraint_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AMKeyboardAvoidingLayoutConstraint_Example-umbrella.h"; sourceTree = "<group>"; };
-		C5CA7EEA689C66669D638360579D57C1 /* Pods-AMKeyboardAvoidingLayoutConstraint_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AMKeyboardAvoidingLayoutConstraint_Tests.modulemap"; sourceTree = "<group>"; };
-		CA06568935AD35910088C1549E91DAA3 /* EndWith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EndWith.swift; path = Nimble/Matchers/EndWith.swift; sourceTree = "<group>"; };
-		CEF2763599082712F6801BDD0352581A /* BeNil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeNil.swift; path = Nimble/Matchers/BeNil.swift; sourceTree = "<group>"; };
-		D3F3284184EA9D73FCA0D5A5BA37F09D /* AssertionRecorder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssertionRecorder.swift; path = Nimble/Adapters/AssertionRecorder.swift; sourceTree = "<group>"; };
+		AFEDF618F3FB5390338D8DCC30293D8A /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B865ABC98A40CA6AF9619D5727822AB0 /* Pods_default_pods_AMKeyboardAvoidingLayoutConstraint_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_default_pods_AMKeyboardAvoidingLayoutConstraint_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B868973A4E6032F6C427D0CE3A5B3EAD /* DSL+Wait.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DSL+Wait.swift"; path = "Sources/Nimble/DSL+Wait.swift"; sourceTree = "<group>"; };
+		B9299DA64CB557EB7288F80D59021BF1 /* Stringers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stringers.swift; path = Sources/Nimble/Utils/Stringers.swift; sourceTree = "<group>"; };
+		BE8E9221ECC8691E0C5EA86797E4E32E /* Async.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Async.swift; path = Sources/Nimble/Utils/Async.swift; sourceTree = "<group>"; };
+		C2E703825EE3A8BF8AF3450C7D9F1C8B /* BeEmpty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeEmpty.swift; path = Sources/Nimble/Matchers/BeEmpty.swift; sourceTree = "<group>"; };
+		C4DBAAAA500B5A5B8E6C7521D8CC4201 /* NMBObjCMatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NMBObjCMatcher.swift; path = Sources/Nimble/Adapters/NMBObjCMatcher.swift; sourceTree = "<group>"; };
+		C545A63062ACAF096C8D1583FD76FF36 /* FailureMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FailureMessage.swift; path = Sources/Nimble/FailureMessage.swift; sourceTree = "<group>"; };
+		CE0898C27CFB560F99F55AC925F2BCAE /* SatisfyAnyOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SatisfyAnyOf.swift; path = Sources/Nimble/Matchers/SatisfyAnyOf.swift; sourceTree = "<group>"; };
 		D53F9D5F4AAAF5165460EB4994F747A2 /* AMKeyboardAvoidingLayoutConstraint-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AMKeyboardAvoidingLayoutConstraint-prefix.pch"; sourceTree = "<group>"; };
-		D97E27A72CE0C217B4F0D3455C50AF63 /* Pods-AMKeyboardAvoidingLayoutConstraint_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AMKeyboardAvoidingLayoutConstraint_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DB608A27A78B3CFA1F2B8DB09F13F9A4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DC7682EC06BC7D33E2B4F4E3593040CA /* BeLessThan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLessThan.swift; path = Nimble/Matchers/BeLessThan.swift; sourceTree = "<group>"; };
-		E06F22455D4578270C8C2DCB995FDC06 /* Pods-AMKeyboardAvoidingLayoutConstraint_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AMKeyboardAvoidingLayoutConstraint_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		E52242917A50B01A6215EA5DCF500D0B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E9FC121D14738EA3B6D82092EFBEF1CF /* Pods-AMKeyboardAvoidingLayoutConstraint_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AMKeyboardAvoidingLayoutConstraint_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		EC8499677E3A25877A25F87C845B3574 /* Pods-AMKeyboardAvoidingLayoutConstraint_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AMKeyboardAvoidingLayoutConstraint_Tests-dummy.m"; sourceTree = "<group>"; };
-		ED179BD3C470BF17BEC218E2116733D5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0DE6D3E432E2688750158E11B665DE3 /* BeGreaterThanOrEqualTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeGreaterThanOrEqualTo.swift; path = Sources/Nimble/Matchers/BeGreaterThanOrEqualTo.swift; sourceTree = "<group>"; };
+		E27819CF38C222D651C649AC84516347 /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E46F07B30B528475A0394B1F098A1ADC /* NMBExceptionCapture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMBExceptionCapture.h; path = Sources/NimbleObjectiveC/NMBExceptionCapture.h; sourceTree = "<group>"; };
+		E7B4E45AA3190457E735B1E982F7F831 /* Pods_default_pods_AMKeyboardAvoidingLayoutConstraint_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_default_pods_AMKeyboardAvoidingLayoutConstraint_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7F8E4A80F37DE30C4C3A33E159D0804 /* PostNotification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PostNotification.swift; path = Sources/Nimble/Matchers/PostNotification.swift; sourceTree = "<group>"; };
+		E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		EC46561EE5C58D8B0374F37A5A86BA2C /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example-dummy.m"; sourceTree = "<group>"; };
+		EC84740B1C85AA94248C4F6A36660EBC /* BeAKindOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeAKindOf.swift; path = Sources/Nimble/Matchers/BeAKindOf.swift; sourceTree = "<group>"; };
+		ECBEF1AC255E63E1253E740850D6659F /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		EEB396CDF6560F33414B7787F126F118 /* AdapterProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdapterProtocols.swift; path = Sources/Nimble/Adapters/AdapterProtocols.swift; sourceTree = "<group>"; };
+		F47D1D73A4D2AF4B145117D8D4DAAF8F /* BeAnInstanceOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeAnInstanceOf.swift; path = Sources/Nimble/Matchers/BeAnInstanceOf.swift; sourceTree = "<group>"; };
 		F5E1D2A99B4FEA4370174DE05F7271DC /* KeyboardAvoidingLayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KeyboardAvoidingLayoutConstraint.swift; sourceTree = "<group>"; };
-		F62BEE02D555391EC7A008061F5E63E9 /* Pods_AMKeyboardAvoidingLayoutConstraint_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMKeyboardAvoidingLayoutConstraint_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FCE7F0B34E47F6B62BBE75C674A89DF4 /* Nimble-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nimble-umbrella.h"; sourceTree = "<group>"; };
+		F612A5C70FC3AFD5ED169492E208CFEB /* HaveCount.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HaveCount.swift; path = Sources/Nimble/Matchers/HaveCount.swift; sourceTree = "<group>"; };
+		F644EF4F56BE28313C08764909897729 /* BeIdenticalTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeIdenticalTo.swift; path = Sources/Nimble/Matchers/BeIdenticalTo.swift; sourceTree = "<group>"; };
+		F8A956F1178B4BF92F681D876D2A36F0 /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example.modulemap"; sourceTree = "<group>"; };
+		F929425EA70B137FEB5B79C2C27293CA /* RaisesException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RaisesException.swift; path = Sources/Nimble/Matchers/RaisesException.swift; sourceTree = "<group>"; };
+		FA142E1DA53950FD312E8A80961F6854 /* DSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSL.m; path = Sources/NimbleObjectiveC/DSL.m; sourceTree = "<group>"; };
+		FEED6113A03465724B187FA88D327D23 /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		487511B146765BD8DD972F3F2496456C /* Frameworks */ = {
+		51914703F8A03DE575E71F3E403BC8E0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B69BA2394BB04C06B4FBD9B3D43415FB /* Foundation.framework in Frameworks */,
+				2D657B0D3B5504B59F61FD056D29F3DC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D5F35957E878A9C8EC6D8D7645BF7CA /* Frameworks */ = {
+		5DD42002640CEA13FC055EEE9376423F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4A1B8135E631991BF0DF2CEE16255F7 /* Foundation.framework in Frameworks */,
+				A236D39AE2D7784EF37667E11BE089B0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7FBD7B1537B634BB7C94BB4D4384BD63 /* Frameworks */ = {
+		D986DB5C718B502AB8849CFAD0BD4424 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C150157922BAEB1F93635508FB59E618 /* Foundation.framework in Frameworks */,
+				6BB6A7AD6203FB30F598C46305E15A41 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A6B8ADD8B4A8A630CC8FB74EFB5E9E06 /* Frameworks */ = {
+		D9E9F838C069118ECD35771238D2FDDC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DCA681764516BB54DF3D8E6B23BA751 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D34BDDE94C6714A96F7A9E96132D3D06 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				86210BCC30AFFC3B474081CBDFC4F853 /* Foundation.framework in Frameworks */,
+				1B094CA8A6796A22AFBEC3569F5A6311 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0F0D228236DA65AE5CED991D429ED7F8 /* Pods-AMKeyboardAvoidingLayoutConstraint_Tests */ = {
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DB608A27A78B3CFA1F2B8DB09F13F9A4 /* Info.plist */,
-				C5CA7EEA689C66669D638360579D57C1 /* Pods-AMKeyboardAvoidingLayoutConstraint_Tests.modulemap */,
-				D97E27A72CE0C217B4F0D3455C50AF63 /* Pods-AMKeyboardAvoidingLayoutConstraint_Tests-acknowledgements.markdown */,
-				02614C798E7994B8CEB0D1EF448516CC /* Pods-AMKeyboardAvoidingLayoutConstraint_Tests-acknowledgements.plist */,
-				EC8499677E3A25877A25F87C845B3574 /* Pods-AMKeyboardAvoidingLayoutConstraint_Tests-dummy.m */,
-				40967DD0E10B5C83A5695FB6AD755B32 /* Pods-AMKeyboardAvoidingLayoutConstraint_Tests-frameworks.sh */,
-				B8E8535430BC13B15C81CAE3BDC923A3 /* Pods-AMKeyboardAvoidingLayoutConstraint_Tests-resources.sh */,
-				37B492A3C0A0D4D62815EAD8F4845A6C /* Pods-AMKeyboardAvoidingLayoutConstraint_Tests-umbrella.h */,
-				E06F22455D4578270C8C2DCB995FDC06 /* Pods-AMKeyboardAvoidingLayoutConstraint_Tests.debug.xcconfig */,
-				56D8F5E0302285B2F47E37B3E6A5B1CD /* Pods-AMKeyboardAvoidingLayoutConstraint_Tests.release.xcconfig */,
+				F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */,
 			);
-			name = "Pods-AMKeyboardAvoidingLayoutConstraint_Tests";
-			path = "Target Support Files/Pods-AMKeyboardAvoidingLayoutConstraint_Tests";
-			sourceTree = "<group>";
-		};
-		16D7273258850FC33B5CA19A4F5149C1 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3EBB27D8FDD01AB5E15403CC33438D36 /* Nimble */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		18E8C7562B16365E6F4C2981B77430D8 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E52242917A50B01A6215EA5DCF500D0B /* Info.plist */,
-				03F63B1EFC855807FFD61BA2CC3497B6 /* Nimble.modulemap */,
-				0DA29D11CBEE6CEADAFC9F4E673DE2DE /* Nimble.xcconfig */,
-				5A296F040F1C78028FBA11B4DEC5E430 /* Nimble-dummy.m */,
-				1B25D85B6A4990CDDD931F308D79E23D /* Nimble-prefix.pch */,
-				FCE7F0B34E47F6B62BBE75C674A89DF4 /* Nimble-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Nimble";
-			sourceTree = "<group>";
-		};
-		3EBB27D8FDD01AB5E15403CC33438D36 /* Nimble */ = {
-			isa = PBXGroup;
-			children = (
-				31E2FB44C5C4BDC76951882E130E955A /* AdapterProtocols.swift */,
-				9B8283E22B99B4597A564FEB6CC5B6F0 /* AllPass.swift */,
-				81604077C57D556AADEADF1D11933EC2 /* AssertionDispatcher.swift */,
-				D3F3284184EA9D73FCA0D5A5BA37F09D /* AssertionRecorder.swift */,
-				324B14B59A0B9F5B7C2F9C41F705955A /* AsyncMatcherWrapper.swift */,
-				AC21004FC03E4336F121F617DA99A4F5 /* BeAKindOf.swift */,
-				6551775431CCF8DF5A92F24220FAB78F /* BeAnInstanceOf.swift */,
-				10AC3A290ACAFFF9B99D29B1CF0361B8 /* BeCloseTo.swift */,
-				176AB8EDC7328E9B4047F67A89F35EC2 /* BeEmpty.swift */,
-				A99FF5D21CE35625913420BE27907630 /* BeginWith.swift */,
-				B7500F9AA5F9C8028235227E0EC271C3 /* BeGreaterThan.swift */,
-				72C23085AD7CE67E0A9528F060919F87 /* BeGreaterThanOrEqualTo.swift */,
-				44DDD67ADB4C207BD67B3D5416F8537F /* BeIdenticalTo.swift */,
-				DC7682EC06BC7D33E2B4F4E3593040CA /* BeLessThan.swift */,
-				9F6ECF7A893E78E2EA057314BBF286AA /* BeLessThanOrEqual.swift */,
-				B1144F0A8F4E0811AB38959A69E97C02 /* BeLogical.swift */,
-				CEF2763599082712F6801BDD0352581A /* BeNil.swift */,
-				A35A7A050FF70711F769FC816D9B0007 /* Contain.swift */,
-				A1B9390B4A12CC8CAC42C819F283BBA6 /* DSL.h */,
-				0A4605C402533740EC2C8298732EB5E0 /* DSL.m */,
-				AAF4A4D51904F8C92D62CFA234FE2A2C /* DSL.swift */,
-				A9992BBE26799B74210776BAC47AE52C /* DSL+Wait.swift */,
-				CA06568935AD35910088C1549E91DAA3 /* EndWith.swift */,
-				3AC7E2CE1D83F693DA6089C05E02318F /* Equal.swift */,
-				30363EF0D073F03A0BC0B273BE0156F7 /* Expectation.swift */,
-				72532FB6C8823BEA2B07C11DEADDEED6 /* Expression.swift */,
-				560B85EAB000115D21F3FE46854CD8C2 /* FailureMessage.swift */,
-				0A52A33EC9E27AAAC319932136781CF5 /* Functional.swift */,
-				53CC3DE9B6085EBD065D6F1C69F0F107 /* HaveCount.swift */,
-				95190B5469818F84FAE461DA2EB8D57F /* Match.swift */,
-				B846792DEADFF0B56E371D4B09C3EB0F /* MatcherFunc.swift */,
-				6055D96E1B84F25A647BCE02AED8FCE0 /* MatcherProtocols.swift */,
-				5C3C703BBE37566F2959CC225914CC6F /* Nimble.h */,
-				4836DC1E44AA0C0621AF76463F6B9FB2 /* NimbleXCTestHandler.swift */,
-				B0641D8ED0A2F17164D65E3DEA6823D9 /* NMBExceptionCapture.h */,
-				6C9C2B0BF58991B3CF3C8EBFD5130423 /* NMBExceptionCapture.m */,
-				0F57397E7FFC78BFA0ECB696375F14B8 /* ObjCExpectation.swift */,
-				974462EF079310381B911F9E96A8D41C /* ObjCMatcher.swift */,
-				A7A3D28C174932B659DF1C45799BE6BF /* Poll.swift */,
-				317CCF6A7D4B328353ADFE5E7249E8A8 /* RaisesException.swift */,
-				40731620279887A678ECC782CD0CC70E /* SourceLocation.swift */,
-				A2ABA3353ED224DCE7D6524032C71E21 /* Stringers.swift */,
-				9E3B67D898EF6DE97473AA875DF4024A /* ThrowError.swift */,
-				18E8C7562B16365E6F4C2981B77430D8 /* Support Files */,
-			);
-			path = Nimble;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		4C0413C4B7230F0275455D53667B2039 /* Development Pods */ = {
@@ -325,46 +251,63 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		5AC074AEA33347886BB4291223AF8A3D /* Products */ = {
+		6EA85D54610ACA1F8CAB995B0FC048C0 /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example */ = {
 			isa = PBXGroup;
 			children = (
-				946487AF06733E41708C52B82A0E3346 /* AMKeyboardAvoidingLayoutConstraint.bundle */,
-				21106AA5B465842E9EB99E2ABCB51426 /* AMKeyboardAvoidingLayoutConstraint.framework */,
-				54CED5786FD5D1E7B6F2A843A417B777 /* Nimble.framework */,
-				F62BEE02D555391EC7A008061F5E63E9 /* Pods_AMKeyboardAvoidingLayoutConstraint_Example.framework */,
-				3F4EDA42A5E5D6723655EDB449C14038 /* Pods_AMKeyboardAvoidingLayoutConstraint_Tests.framework */,
+				9B7A1915547087AF3602DEEA782FB6A9 /* Info.plist */,
+				F8A956F1178B4BF92F681D876D2A36F0 /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example.modulemap */,
+				E27819CF38C222D651C649AC84516347 /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example-acknowledgements.markdown */,
+				ECBEF1AC255E63E1253E740850D6659F /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example-acknowledgements.plist */,
+				EC46561EE5C58D8B0374F37A5A86BA2C /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example-dummy.m */,
+				985A70411C166CFE79A4FD66C53C9374 /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example-frameworks.sh */,
+				69F9934AB3E9A45C9ED9574AFA7553A0 /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example-resources.sh */,
+				9AE666AF82C8ABCDCE3BA2BF6467F0C4 /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example-umbrella.h */,
+				FEED6113A03465724B187FA88D327D23 /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example.debug.xcconfig */,
+				19FACAE3B39D908AEDFAE68BB28A0C3D /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example.release.xcconfig */,
 			);
-			name = Products;
+			name = "Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example";
+			path = "Target Support Files/Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				4C0413C4B7230F0275455D53667B2039 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				16D7273258850FC33B5CA19A4F5149C1 /* Pods */,
-				5AC074AEA33347886BB4291223AF8A3D /* Products */,
-				EF45346D12E2DE738CB94C53F467A276 /* Targets Support Files */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				D60CA58540AD6823DB5386E0485B1068 /* Pods */,
+				AD1B7895CAE5AE5DD0FDCA3E06453D73 /* Products */,
+				F75BA4710501682DA66B6139FFA6F11D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		82181FF70B9FF4E5ADC5075CB68BB364 /* Pods-AMKeyboardAvoidingLayoutConstraint_Example */ = {
+		983E1165D768912B0326A39C0C723323 /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				ED179BD3C470BF17BEC218E2116733D5 /* Info.plist */,
-				0C290F50523CA11EE4BC40A914714AFC /* Pods-AMKeyboardAvoidingLayoutConstraint_Example.modulemap */,
-				3C3DC0DAAE152914BCE632143929DD6E /* Pods-AMKeyboardAvoidingLayoutConstraint_Example-acknowledgements.markdown */,
-				E9FC121D14738EA3B6D82092EFBEF1CF /* Pods-AMKeyboardAvoidingLayoutConstraint_Example-acknowledgements.plist */,
-				9F9A5D43A519D32D1FD7EA74AA65908E /* Pods-AMKeyboardAvoidingLayoutConstraint_Example-dummy.m */,
-				B63A6C4A0C97327BC595DF43B7DECBF5 /* Pods-AMKeyboardAvoidingLayoutConstraint_Example-frameworks.sh */,
-				980873D4AC5ED5E968302DDC86F5C45D /* Pods-AMKeyboardAvoidingLayoutConstraint_Example-resources.sh */,
-				C0B0DAC20BE84575A75009843F8FF209 /* Pods-AMKeyboardAvoidingLayoutConstraint_Example-umbrella.h */,
-				4EEC4A8ADD94ECA674DBC9D71D0742D7 /* Pods-AMKeyboardAvoidingLayoutConstraint_Example.debug.xcconfig */,
-				4AA83E2CDEBBD490F648B3353282CDF8 /* Pods-AMKeyboardAvoidingLayoutConstraint_Example.release.xcconfig */,
+				11CAF11EF706B1540B459C4FBD946586 /* Info.plist */,
+				6DF7E01875167435BAE45712DFF53A80 /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests.modulemap */,
+				AFEDF618F3FB5390338D8DCC30293D8A /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests-acknowledgements.markdown */,
+				07C6FF36DAABDCC8C43D354875FE77C0 /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests-acknowledgements.plist */,
+				1BC2F223A3295958E45D1A66BCAF582D /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests-dummy.m */,
+				7D94FD12432F047F1E510F48EED513C1 /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests-frameworks.sh */,
+				97D960DCDCB18AA8E38683B216091ACC /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests-resources.sh */,
+				5F53403FCDC5A95C24575DA6D1C53B85 /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests-umbrella.h */,
+				7BB0CBFE5E3037DEEB0003F3B276D3C8 /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests.debug.xcconfig */,
+				4C52FAA0272A58788174D1665590101F /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests.release.xcconfig */,
 			);
-			name = "Pods-AMKeyboardAvoidingLayoutConstraint_Example";
-			path = "Target Support Files/Pods-AMKeyboardAvoidingLayoutConstraint_Example";
+			name = "Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests";
+			path = "Target Support Files/Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests";
+			sourceTree = "<group>";
+		};
+		AD1B7895CAE5AE5DD0FDCA3E06453D73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				219E50CCE636A055B28087364EC7FCBD /* AMKeyboardAvoidingLayoutConstraint.framework */,
+				8ED1EE33DAF1031CC0A3A2304C742B2A /* Nimble.framework */,
+				E7B4E45AA3190457E735B1E982F7F831 /* Pods_default_pods_AMKeyboardAvoidingLayoutConstraint_Example.framework */,
+				B865ABC98A40CA6AF9619D5727822AB0 /* Pods_default_pods_AMKeyboardAvoidingLayoutConstraint_Tests.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		AE5B5070CDDD778AA423A5D0AC2A2FFA /* Support Files */ = {
@@ -381,28 +324,34 @@
 			path = "Example/Pods/Target Support Files/AMKeyboardAvoidingLayoutConstraint";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		D386CE152FF42FFB1EF7C9A0FD35D6EB /* Pod */ = {
 			isa = PBXGroup;
 			children = (
 				F8E31A07D414CE21E52D9B375F564C50 /* Classes */,
 			);
 			path = Pod;
+			sourceTree = "<group>";
+		};
+		D60CA58540AD6823DB5386E0485B1068 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2A3C241E8D37BB83C239E254C786B45 /* Nimble */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EAAAB380FD05E5937328482F906ADF22 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				15C484236D61C553B7F9BA77C2CBED4F /* Info.plist */,
+				99E7B97D93DC0B4861CEB09A9AACDE34 /* Nimble.modulemap */,
+				38BE40A67C5D42849226B3A214B0FFD1 /* Nimble.xcconfig */,
+				6B5BCFCE3E26C2196B6D3F29747F278F /* Nimble-dummy.m */,
+				010D09EA7B14A862EF773CC2E746F989 /* Nimble-prefix.pch */,
+				3978C1443059C507EF9C0220AD4A62F6 /* Nimble-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Nimble";
 			sourceTree = "<group>";
 		};
 		EC3D262BC3C31F0F118FAE540438AEC2 /* AMKeyboardAvoidingLayoutConstraint */ = {
@@ -415,11 +364,82 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		EF45346D12E2DE738CB94C53F467A276 /* Targets Support Files */ = {
+		F2A3C241E8D37BB83C239E254C786B45 /* Nimble */ = {
 			isa = PBXGroup;
 			children = (
-				82181FF70B9FF4E5ADC5075CB68BB364 /* Pods-AMKeyboardAvoidingLayoutConstraint_Example */,
-				0F0D228236DA65AE5CED991D429ED7F8 /* Pods-AMKeyboardAvoidingLayoutConstraint_Tests */,
+				EEB396CDF6560F33414B7787F126F118 /* AdapterProtocols.swift */,
+				3822CC29ED1ED31B326CE0B019D51BAD /* AllPass.swift */,
+				A6C141E2E3843EB8949DE977EAB51C2C /* AssertionDispatcher.swift */,
+				092DE1C215B6D419EA5E987E22132998 /* AssertionRecorder.swift */,
+				BE8E9221ECC8691E0C5EA86797E4E32E /* Async.swift */,
+				75C6D74AC0E6A0C95CF27A21716BFAA9 /* AsyncMatcherWrapper.swift */,
+				EC84740B1C85AA94248C4F6A36660EBC /* BeAKindOf.swift */,
+				F47D1D73A4D2AF4B145117D8D4DAAF8F /* BeAnInstanceOf.swift */,
+				56A8BD540875334F8C6382DEE9139073 /* BeCloseTo.swift */,
+				C2E703825EE3A8BF8AF3450C7D9F1C8B /* BeEmpty.swift */,
+				A23B9B769134DF16C8B3CA83B355C999 /* BeginWith.swift */,
+				17E375774B5F84BE5892A55E8A17DC65 /* BeGreaterThan.swift */,
+				E0DE6D3E432E2688750158E11B665DE3 /* BeGreaterThanOrEqualTo.swift */,
+				F644EF4F56BE28313C08764909897729 /* BeIdenticalTo.swift */,
+				0EC0D886C1CD39ED4BA0E08768A16FAD /* BeLessThan.swift */,
+				4C75614405A523AB77100A6EA93AFABE /* BeLessThanOrEqual.swift */,
+				9974EEC49B2B88870C5465EAF460C4AD /* BeLogical.swift */,
+				8012E91890DCD231093413BBD99C3F68 /* BeNil.swift */,
+				058B5B717B8A88C107F389FD83AD257B /* BeVoid.swift */,
+				4D39D9A89A7AE1DA886A0BB4B4D5A8F1 /* Contain.swift */,
+				04892BB8042135AF9CB93ACA26317D13 /* CurrentTestCaseTracker.h */,
+				4D27F725A726004D5C859FE3816C8EFD /* DSL.h */,
+				FA142E1DA53950FD312E8A80961F6854 /* DSL.m */,
+				26F1C98850D1ED8F3DDE84239707721D /* DSL.swift */,
+				B868973A4E6032F6C427D0CE3A5B3EAD /* DSL+Wait.swift */,
+				6948CFF137AA5E2CA74A0E512D9F8DEB /* EndWith.swift */,
+				39FFE0B5F3A07E29C35D0F855450298C /* Equal.swift */,
+				A6BE0EEC4E5BD0648604532AF5D254C0 /* Errors.swift */,
+				533096DE0A395A733FB2AB04869B65E9 /* Expectation.swift */,
+				65DEF1EA97592C0CC511B50D9C3F719D /* Expression.swift */,
+				C545A63062ACAF096C8D1583FD76FF36 /* FailureMessage.swift */,
+				8329DCEF0B358425609660C6B3EFB4CA /* Functional.swift */,
+				F612A5C70FC3AFD5ED169492E208CFEB /* HaveCount.swift */,
+				1C828F90027E64741BC45CC4D3DFC3C2 /* LinuxSupport.swift */,
+				7FA14129B102812C54C4AF94C1FDB392 /* Match.swift */,
+				7216C80F939FEC8572382C5CB167965A /* MatcherFunc.swift */,
+				A8D29DC779751448A95CB185B490D300 /* MatcherProtocols.swift */,
+				6E84C80A9430021DC41C55BE8BEAE433 /* MatchError.swift */,
+				90733B6CE810154C9016A19A5D5A94B0 /* Nimble.h */,
+				5521FC8B3C2949C6DBA2310DFEE5A297 /* NimbleEnvironment.swift */,
+				9AD8F673825087119EB53F5B88D9BB31 /* NimbleXCTestHandler.swift */,
+				E46F07B30B528475A0394B1F098A1ADC /* NMBExceptionCapture.h */,
+				5937362C9A0F87BD955126F70DC45468 /* NMBExceptionCapture.m */,
+				77C6E31192B7E666B43E368A4E6E09A0 /* NMBExpectation.swift */,
+				C4DBAAAA500B5A5B8E6C7521D8CC4201 /* NMBObjCMatcher.swift */,
+				871333D762C9F0636F87493AA298B4DD /* NMBStringify.h */,
+				37BB0FD1A03540292571A49EA1E997E6 /* NMBStringify.m */,
+				E7F8E4A80F37DE30C4C3A33E159D0804 /* PostNotification.swift */,
+				F929425EA70B137FEB5B79C2C27293CA /* RaisesException.swift */,
+				CE0898C27CFB560F99F55AC925F2BCAE /* SatisfyAnyOf.swift */,
+				970CE9105988B8DB409B3E2C6699C211 /* SourceLocation.swift */,
+				B9299DA64CB557EB7288F80D59021BF1 /* Stringers.swift */,
+				6A4F56545E50EAEB714F5701501EB5F8 /* ThrowError.swift */,
+				0217FACFAF38C1BE8BC4D6AB28155A5B /* XCTestObservationCenter+Register.m */,
+				EAAAB380FD05E5937328482F906ADF22 /* Support Files */,
+			);
+			path = Nimble;
+			sourceTree = "<group>";
+		};
+		F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */,
+				E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F75BA4710501682DA66B6139FFA6F11D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6EA85D54610ACA1F8CAB995B0FC048C0 /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example */,
+				983E1165D768912B0326A39C0C723323 /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -435,87 +455,53 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		07A0C91DE04B202866A61E33EE33882C /* Headers */ = {
+		5A61DC90B8CF28C736D27734129D629E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7851A62A265384743D5992F49B4550E4 /* Pods-AMKeyboardAvoidingLayoutConstraint_Tests-umbrella.h in Headers */,
+				3DFE504E308576FCFA079C3EA537E37D /* CurrentTestCaseTracker.h in Headers */,
+				1FF0AB963D7477E1F59E7F1163D4FD24 /* DSL.h in Headers */,
+				7A031C98288E089FDB3831EEBD2DEC15 /* Nimble-umbrella.h in Headers */,
+				59139B839FE54C37490AF590C8315B2C /* Nimble.h in Headers */,
+				4F09339E7ECBE3C937DDD34189245320 /* NMBExceptionCapture.h in Headers */,
+				715161803229991AFEB8887A88796778 /* NMBStringify.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		379026A137928384C0A1EB4CB1352B1C /* Headers */ = {
+		5E93C28C3FD4660300FA0B12102A7135 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4866D23C62B76F2E08F896E45BA1F76 /* AMKeyboardAvoidingLayoutConstraint-umbrella.h in Headers */,
+				B915738565089ACD69F4BA8E65C8D4BB /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C096B9024208402B2E1BACA5AC1B2F8 /* Headers */ = {
+		61A8AED8EC12140FCD0D805DB097D617 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				581BACE82453477F60C7A5F56DE83D07 /* Pods-AMKeyboardAvoidingLayoutConstraint_Example-umbrella.h in Headers */,
+				8EA02256FF2F01603BE7F45158E4C0EE /* AMKeyboardAvoidingLayoutConstraint-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E558CFA5C045F339837B0B7645133081 /* Headers */ = {
+		9A63DA2F68F6E258B5BDD90189358C86 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9341B96D63EF6C54A1F906A1BBAEAF46 /* DSL.h in Headers */,
-				0F49254A4C560DD4696936F6080756DC /* Nimble-umbrella.h in Headers */,
-				512DFAE728521F02AF225F0082195DCC /* Nimble.h in Headers */,
-				02BF9988CC94A01E7CB6049694390020 /* NMBExceptionCapture.h in Headers */,
+				DA6CA3D6F2ADCF81EC29C09533B23D34 /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		99C7BCBC84F0422A85E68E306BF665C5 /* AMKeyboardAvoidingLayoutConstraint */ = {
+		3F29A493B7BA5132E5D8B38018BF38B9 /* Nimble */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 60ACD1A923D690F69118A3F5E19FC59E /* Build configuration list for PBXNativeTarget "AMKeyboardAvoidingLayoutConstraint" */;
+			buildConfigurationList = 07C301A49A5E31A99D1939421B54D850 /* Build configuration list for PBXNativeTarget "Nimble" */;
 			buildPhases = (
-				BBBC7DE92F0F40905E1AAB1EE5414904 /* Sources */,
-				487511B146765BD8DD972F3F2496456C /* Frameworks */,
-				DBD9A897A5E865A647EB463223ABA6B1 /* Resources */,
-				379026A137928384C0A1EB4CB1352B1C /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7B1E8293C4576DEDD2AF9DB3A24FBBE9 /* PBXTargetDependency */,
-			);
-			name = AMKeyboardAvoidingLayoutConstraint;
-			productName = AMKeyboardAvoidingLayoutConstraint;
-			productReference = 21106AA5B465842E9EB99E2ABCB51426 /* AMKeyboardAvoidingLayoutConstraint.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C4F12EE343BDB76682C3EFF5FB4203E4 /* AMKeyboardAvoidingLayoutConstraint-AMKeyboardAvoidingLayoutConstraint */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2D58B0204166DDF06B0FE8A9B1278766 /* Build configuration list for PBXNativeTarget "AMKeyboardAvoidingLayoutConstraint-AMKeyboardAvoidingLayoutConstraint" */;
-			buildPhases = (
-				6F92842300A535112F7EBBED2D0D015E /* Sources */,
-				D34BDDE94C6714A96F7A9E96132D3D06 /* Frameworks */,
-				59973C8CA2117471B7EA50B16F339ADE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "AMKeyboardAvoidingLayoutConstraint-AMKeyboardAvoidingLayoutConstraint";
-			productName = "AMKeyboardAvoidingLayoutConstraint-AMKeyboardAvoidingLayoutConstraint";
-			productReference = 946487AF06733E41708C52B82A0E3346 /* AMKeyboardAvoidingLayoutConstraint.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-		C5DB5104FED3C10F78978AFC810982B9 /* Nimble */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D4DCEA35595251EC6B9BDC29A571E7B2 /* Build configuration list for PBXNativeTarget "Nimble" */;
-			buildPhases = (
-				CC264E557A8A184C30ECCED31C74BB34 /* Sources */,
-				7FBD7B1537B634BB7C94BB4D4384BD63 /* Frameworks */,
-				E558CFA5C045F339837B0B7645133081 /* Headers */,
+				CDE2EBAB50F1ECB3D8F48BCD807406DD /* Sources */,
+				5DD42002640CEA13FC055EEE9376423F /* Frameworks */,
+				5A61DC90B8CF28C736D27734129D629E /* Headers */,
 			);
 			buildRules = (
 			);
@@ -523,44 +509,61 @@
 			);
 			name = Nimble;
 			productName = Nimble;
-			productReference = 54CED5786FD5D1E7B6F2A843A417B777 /* Nimble.framework */;
+			productReference = 8ED1EE33DAF1031CC0A3A2304C742B2A /* Nimble.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D0815F32E3B929E74696ECA133395380 /* Pods-AMKeyboardAvoidingLayoutConstraint_Tests */ = {
+		89A824C147FE016EE5D4D9CF7C94788C /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5F40F9DF6FEF89D78E48BEB885823EF6 /* Build configuration list for PBXNativeTarget "Pods-AMKeyboardAvoidingLayoutConstraint_Tests" */;
+			buildConfigurationList = 163126A7D9168432360FD27D8A2D9CD4 /* Build configuration list for PBXNativeTarget "Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example" */;
 			buildPhases = (
-				BAE5F234C4E9505522B170E98692A4EE /* Sources */,
-				A6B8ADD8B4A8A630CC8FB74EFB5E9E06 /* Frameworks */,
-				07A0C91DE04B202866A61E33EE33882C /* Headers */,
+				6FE5F75926D2FFE1772D18662C04C65A /* Sources */,
+				D986DB5C718B502AB8849CFAD0BD4424 /* Frameworks */,
+				5E93C28C3FD4660300FA0B12102A7135 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3C5CE505B7A75E75DC86A867B686EDCE /* PBXTargetDependency */,
-				DF6807C093BF2581E9EABE01BA93E045 /* PBXTargetDependency */,
+				BD52B3F39CBC305A1B67FFF130E9F957 /* PBXTargetDependency */,
 			);
-			name = "Pods-AMKeyboardAvoidingLayoutConstraint_Tests";
-			productName = "Pods-AMKeyboardAvoidingLayoutConstraint_Tests";
-			productReference = 3F4EDA42A5E5D6723655EDB449C14038 /* Pods_AMKeyboardAvoidingLayoutConstraint_Tests.framework */;
+			name = "Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example";
+			productName = "Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example";
+			productReference = E7B4E45AA3190457E735B1E982F7F831 /* Pods_default_pods_AMKeyboardAvoidingLayoutConstraint_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E6739738070DE36030DA0BEDD450D1C2 /* Pods-AMKeyboardAvoidingLayoutConstraint_Example */ = {
+		967E8E8C778A643461800F708AF5FDA6 /* AMKeyboardAvoidingLayoutConstraint */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FBB868F1555D10DC45DC28F13A7FFABE /* Build configuration list for PBXNativeTarget "Pods-AMKeyboardAvoidingLayoutConstraint_Example" */;
+			buildConfigurationList = D48E1B83D58A20752D7F7AC868B9A22D /* Build configuration list for PBXNativeTarget "AMKeyboardAvoidingLayoutConstraint" */;
 			buildPhases = (
-				1CA29EC34AEF4C27F88B21E40CBC2535 /* Sources */,
-				7D5F35957E878A9C8EC6D8D7645BF7CA /* Frameworks */,
-				4C096B9024208402B2E1BACA5AC1B2F8 /* Headers */,
+				ADAC1EF17920479FC86AF39E91D0AFC2 /* Sources */,
+				D9E9F838C069118ECD35771238D2FDDC /* Frameworks */,
+				61A8AED8EC12140FCD0D805DB097D617 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				23A95B80F113EF420AC3A98A5537EBC7 /* PBXTargetDependency */,
 			);
-			name = "Pods-AMKeyboardAvoidingLayoutConstraint_Example";
-			productName = "Pods-AMKeyboardAvoidingLayoutConstraint_Example";
-			productReference = F62BEE02D555391EC7A008061F5E63E9 /* Pods_AMKeyboardAvoidingLayoutConstraint_Example.framework */;
+			name = AMKeyboardAvoidingLayoutConstraint;
+			productName = AMKeyboardAvoidingLayoutConstraint;
+			productReference = 219E50CCE636A055B28087364EC7FCBD /* AMKeyboardAvoidingLayoutConstraint.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CC3BA0DAF75D7FD02E4437ACEDA54098 /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 348E649857BF4B1180EB4909A40F3FB2 /* Build configuration list for PBXNativeTarget "Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests" */;
+			buildPhases = (
+				11B8717E30A2BEB396F2AB4E2475276C /* Sources */,
+				51914703F8A03DE575E71F3E403BC8E0 /* Frameworks */,
+				9A63DA2F68F6E258B5BDD90189358C86 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61E8D354B2D0C6F5CB6C8347381C5CC3 /* PBXTargetDependency */,
+				F08AD66622D760C689253E56977C3C32 /* PBXTargetDependency */,
+			);
+			name = "Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests";
+			productName = "Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests";
+			productReference = B865ABC98A40CA6AF9619D5727822AB0 /* Pods_default_pods_AMKeyboardAvoidingLayoutConstraint_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -569,7 +572,7 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -580,152 +583,130 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 5AC074AEA33347886BB4291223AF8A3D /* Products */;
+			productRefGroup = AD1B7895CAE5AE5DD0FDCA3E06453D73 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				99C7BCBC84F0422A85E68E306BF665C5 /* AMKeyboardAvoidingLayoutConstraint */,
-				C4F12EE343BDB76682C3EFF5FB4203E4 /* AMKeyboardAvoidingLayoutConstraint-AMKeyboardAvoidingLayoutConstraint */,
-				C5DB5104FED3C10F78978AFC810982B9 /* Nimble */,
-				E6739738070DE36030DA0BEDD450D1C2 /* Pods-AMKeyboardAvoidingLayoutConstraint_Example */,
-				D0815F32E3B929E74696ECA133395380 /* Pods-AMKeyboardAvoidingLayoutConstraint_Tests */,
+				967E8E8C778A643461800F708AF5FDA6 /* AMKeyboardAvoidingLayoutConstraint */,
+				3F29A493B7BA5132E5D8B38018BF38B9 /* Nimble */,
+				89A824C147FE016EE5D4D9CF7C94788C /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example */,
+				CC3BA0DAF75D7FD02E4437ACEDA54098 /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		59973C8CA2117471B7EA50B16F339ADE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DBD9A897A5E865A647EB463223ABA6B1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				650819D1A6C028DCC020E071F24515B3 /* AMKeyboardAvoidingLayoutConstraint.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		1CA29EC34AEF4C27F88B21E40CBC2535 /* Sources */ = {
+		11B8717E30A2BEB396F2AB4E2475276C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4787EFFA78236C0BF67C0B9637285BE /* Pods-AMKeyboardAvoidingLayoutConstraint_Example-dummy.m in Sources */,
+				AEA1BB8FFA63AA655A94FAF9357C383E /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6F92842300A535112F7EBBED2D0D015E /* Sources */ = {
+		6FE5F75926D2FFE1772D18662C04C65A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95795539DE3B6CCEFEC68F994829D05A /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BAE5F234C4E9505522B170E98692A4EE /* Sources */ = {
+		ADAC1EF17920479FC86AF39E91D0AFC2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBBCD5F4F350FD5D6C5756E0C21DA4A6 /* Pods-AMKeyboardAvoidingLayoutConstraint_Tests-dummy.m in Sources */,
+				8F641F882D6E0842823139133FE6F650 /* AMKeyboardAvoidingLayoutConstraint-dummy.m in Sources */,
+				9D13EE85BC38EF0FB3F5C99042BFBE0C /* KeyboardAvoidingLayoutConstraint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BBBC7DE92F0F40905E1AAB1EE5414904 /* Sources */ = {
+		CDE2EBAB50F1ECB3D8F48BCD807406DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D808466D7BFDCFAAC5F8711145BADDDC /* AMKeyboardAvoidingLayoutConstraint-dummy.m in Sources */,
-				4FCB4B3F06A3EF37089F419B7E1A5332 /* KeyboardAvoidingLayoutConstraint.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CC264E557A8A184C30ECCED31C74BB34 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CAAED5FB81DB035A9EC080917C783FA6 /* AdapterProtocols.swift in Sources */,
-				D429691F39B4C30A8993360FB8A3E334 /* AllPass.swift in Sources */,
-				33514FEE6EA65605EFB6F1801834B692 /* AssertionDispatcher.swift in Sources */,
-				E6E7B15FAD6C56681511813DB2666478 /* AssertionRecorder.swift in Sources */,
-				0A6E71555F55082003A3DB2B03CA85D2 /* AsyncMatcherWrapper.swift in Sources */,
-				77128C0365A98E3BAC038A915B38791C /* BeAKindOf.swift in Sources */,
-				7A6E2730A25A55D8DFA74D3D7CB005EF /* BeAnInstanceOf.swift in Sources */,
-				B905718B2501DDA22F2AE73CB6E76E6B /* BeCloseTo.swift in Sources */,
-				9E7786C034F0E0A6B5F0A0E6BE7D7E4A /* BeEmpty.swift in Sources */,
-				9646787942A85613FE77F45794E9B5CD /* BeginWith.swift in Sources */,
-				1E28F9362956B758C4C981D3C1129C90 /* BeGreaterThan.swift in Sources */,
-				33264C6A7A3536AD91EF42B3E8CC8220 /* BeGreaterThanOrEqualTo.swift in Sources */,
-				7680F08C43B965EC873D26E6AD854C9F /* BeIdenticalTo.swift in Sources */,
-				BCB53F24DCADF12601B8BA90AE3190AE /* BeLessThan.swift in Sources */,
-				4E87C6AE24AB15700A39FC24A2F1C93B /* BeLessThanOrEqual.swift in Sources */,
-				02DF5BD2281BA10105A447F95FCF8CF3 /* BeLogical.swift in Sources */,
-				F1D4A8A1FC68EFA7F45945908D70A352 /* BeNil.swift in Sources */,
-				B41E8E775408ACE233F29CE93388B270 /* Contain.swift in Sources */,
-				DEE170DD3064F7343884A4016546B762 /* DSL+Wait.swift in Sources */,
-				B0A26F58BA3E6222E50AE5AC883B8EAF /* DSL.m in Sources */,
-				58EBA2C1A43283FB2188AB1FB592D32B /* DSL.swift in Sources */,
-				3A92AEE86034356AF8987F20EE1F82DF /* EndWith.swift in Sources */,
-				FB1347627E64CA7E98C19DC985E13D95 /* Equal.swift in Sources */,
-				E2FBD93D72DF01427486D1A6853FC689 /* Expectation.swift in Sources */,
-				C63AB521EA514A811A167E507C0CF9AD /* Expression.swift in Sources */,
-				0492354DA7EF0C9068F7B4E8F74001B0 /* FailureMessage.swift in Sources */,
-				D7B45D4600C6166C124C0A926EE65284 /* Functional.swift in Sources */,
-				BB4F35062294C1A461DA3CEF6306A1DB /* HaveCount.swift in Sources */,
-				E36C5201AE7F1CBB25F9D2E7CBFC3C20 /* Match.swift in Sources */,
-				3AEAC447B09E7AABC140654C8529BC94 /* MatcherFunc.swift in Sources */,
-				C9AC658F3FCB67B50E96313C2687B33D /* MatcherProtocols.swift in Sources */,
-				73695FA6A6CDFBB13C0CC73C2E5126C0 /* Nimble-dummy.m in Sources */,
-				831D33A4C5C5BBC1EC158D9A236C61D7 /* NimbleXCTestHandler.swift in Sources */,
-				9187EEC2982DB82AD8D3A7001AA647D6 /* NMBExceptionCapture.m in Sources */,
-				CD9D31B6063C50689EAC2A0745C282DC /* ObjCExpectation.swift in Sources */,
-				7BFD25B1BB1116D8AC47E2C3874C5B76 /* ObjCMatcher.swift in Sources */,
-				8D0BF52FF564A170A3D1DE28C27B233E /* Poll.swift in Sources */,
-				FFC311AC1E19A23E0EB7B1B3A7A5A744 /* RaisesException.swift in Sources */,
-				7DA9FF8513AA48310B15A0744A541818 /* SourceLocation.swift in Sources */,
-				F10FD3129985704FA1610F84FB98EDF5 /* Stringers.swift in Sources */,
-				2D3B916F7168E9412EDB95BA203A5BB4 /* ThrowError.swift in Sources */,
+				0A9DF4E770D4E3DDAA4F557EAF0D873A /* AdapterProtocols.swift in Sources */,
+				F6DBD8E46E5BC6D00FD3D7BB95D51FEB /* AllPass.swift in Sources */,
+				68BFD8C6F627F355EAE322A5B91F93B4 /* AssertionDispatcher.swift in Sources */,
+				DBD6CB0E1FE5ECBD3D3FD21100C615B5 /* AssertionRecorder.swift in Sources */,
+				E8CF566F16CA5F894F2CDF609ED1C515 /* Async.swift in Sources */,
+				D8EBB26318099699C211467EF4BF88ED /* AsyncMatcherWrapper.swift in Sources */,
+				9301395B98E52BB0184180B68D2ADF0D /* BeAKindOf.swift in Sources */,
+				4C492DC03B3F03DF4755F6D52CCD49C0 /* BeAnInstanceOf.swift in Sources */,
+				ACA6415F8E0910F08E5426D4C7EA6BB4 /* BeCloseTo.swift in Sources */,
+				FACC2D7979CB59D81403B6B4C750A178 /* BeEmpty.swift in Sources */,
+				3200E870090BDDD9C441A427E022269C /* BeginWith.swift in Sources */,
+				FD034BF5A3C7B606EE60F305932040A4 /* BeGreaterThan.swift in Sources */,
+				B3EA1BC5E1B9D0608A3E8C13C7DA6ADF /* BeGreaterThanOrEqualTo.swift in Sources */,
+				3EE4D3F05D7A2C245D1687EFD5C72106 /* BeIdenticalTo.swift in Sources */,
+				D866F3CB98D76106EAE8B0E584DC5E0F /* BeLessThan.swift in Sources */,
+				2B44100105D5AECCDB761C58AE1B40F1 /* BeLessThanOrEqual.swift in Sources */,
+				4A899D9E9D77243EA85CB743CDC496EB /* BeLogical.swift in Sources */,
+				18BE9B05543405CAB182686AD883C694 /* BeNil.swift in Sources */,
+				64E684835B31328F3951EA022977C958 /* BeVoid.swift in Sources */,
+				7CEF73F686294B0288121C01B7677DEB /* Contain.swift in Sources */,
+				12813FFD1EC00FAE70E015AF7DA3070A /* DSL+Wait.swift in Sources */,
+				D92936273BD7C1E55C0F14FE1E4CD11E /* DSL.m in Sources */,
+				CA7CB84F269703583A2E75C3F0337DD8 /* DSL.swift in Sources */,
+				A27F6D8DCBC0F3FC25B637B73CC3D0A6 /* EndWith.swift in Sources */,
+				FF6BF208488423B547BF3B8A8CC962FB /* Equal.swift in Sources */,
+				08EC4958125DE2F11FCEE0C99CBCBDAD /* Errors.swift in Sources */,
+				F02537AA993B0A8E8BA0B9ED7017EB64 /* Expectation.swift in Sources */,
+				B730715CAD7A96221AF215D751349944 /* Expression.swift in Sources */,
+				E775CE850AD181685E09D989A73AD76A /* FailureMessage.swift in Sources */,
+				C487E95477835D3FCE4C5623C3EC83F8 /* Functional.swift in Sources */,
+				98F67566A289A4154786B3997C8B064C /* HaveCount.swift in Sources */,
+				5C5A99B7B94AC3F093630FA7436D8CEA /* LinuxSupport.swift in Sources */,
+				7124840412B441F4A6C00BEF17C6343C /* Match.swift in Sources */,
+				E07D530A681D254583442DE085A0B1A6 /* MatcherFunc.swift in Sources */,
+				DF9369EC05676227AB2CF53BB84D5EFA /* MatcherProtocols.swift in Sources */,
+				417FDF770CACC4DE3939B71D0340BA8B /* MatchError.swift in Sources */,
+				318379F20C2CDE9D5778F5B3970DF1C0 /* Nimble-dummy.m in Sources */,
+				33C2039469045B8838DFF7E764E892DF /* NimbleEnvironment.swift in Sources */,
+				2E86A0F2870D9F958C93477B2079679F /* NimbleXCTestHandler.swift in Sources */,
+				FF8FEA921275AB297FD83FA299ACBD41 /* NMBExceptionCapture.m in Sources */,
+				2887154BC17981F644900A3AB72332EA /* NMBExpectation.swift in Sources */,
+				AFBBFD268D5697EAABB3F688BD48A234 /* NMBObjCMatcher.swift in Sources */,
+				677EB185F79108A99208B50AD631BC11 /* NMBStringify.m in Sources */,
+				B14D0874379B07C501C2920344AA3B67 /* PostNotification.swift in Sources */,
+				E093B708D54820412CBF06DDCE58C974 /* RaisesException.swift in Sources */,
+				8412BBE75EA79E7AF3FB25A58148FAD0 /* SatisfyAnyOf.swift in Sources */,
+				737DA7D8412EBE69422B7333C2FF36CB /* SourceLocation.swift in Sources */,
+				0BF9CC194586BF10DCC17291FE7C1369 /* Stringers.swift in Sources */,
+				4D57C8D3EED4E9D5B7A1898DB6909FE5 /* ThrowError.swift in Sources */,
+				A54EA0C535126455D84C9FCCBD53C93C /* XCTestObservationCenter+Register.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		23A95B80F113EF420AC3A98A5537EBC7 /* PBXTargetDependency */ = {
+		61E8D354B2D0C6F5CB6C8347381C5CC3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AMKeyboardAvoidingLayoutConstraint;
-			target = 99C7BCBC84F0422A85E68E306BF665C5 /* AMKeyboardAvoidingLayoutConstraint */;
-			targetProxy = 371A275DBB3584EBB28BFD4ACF63462D /* PBXContainerItemProxy */;
+			target = 967E8E8C778A643461800F708AF5FDA6 /* AMKeyboardAvoidingLayoutConstraint */;
+			targetProxy = C72D21CD190ED4406D7BEF1ACFEE9E1A /* PBXContainerItemProxy */;
 		};
-		3C5CE505B7A75E75DC86A867B686EDCE /* PBXTargetDependency */ = {
+		BD52B3F39CBC305A1B67FFF130E9F957 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AMKeyboardAvoidingLayoutConstraint;
-			target = 99C7BCBC84F0422A85E68E306BF665C5 /* AMKeyboardAvoidingLayoutConstraint */;
-			targetProxy = 061E6AAD35372010FD06C21AEF8BC850 /* PBXContainerItemProxy */;
+			target = 967E8E8C778A643461800F708AF5FDA6 /* AMKeyboardAvoidingLayoutConstraint */;
+			targetProxy = F75FFC5C8B81A22F922F5D86CDC4AE96 /* PBXContainerItemProxy */;
 		};
-		7B1E8293C4576DEDD2AF9DB3A24FBBE9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "AMKeyboardAvoidingLayoutConstraint-AMKeyboardAvoidingLayoutConstraint";
-			target = C4F12EE343BDB76682C3EFF5FB4203E4 /* AMKeyboardAvoidingLayoutConstraint-AMKeyboardAvoidingLayoutConstraint */;
-			targetProxy = 59FD3F46DA2C1E2AC0BF6BBAF3DBB2CD /* PBXContainerItemProxy */;
-		};
-		DF6807C093BF2581E9EABE01BA93E045 /* PBXTargetDependency */ = {
+		F08AD66622D760C689253E56977C3C32 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Nimble;
-			target = C5DB5104FED3C10F78978AFC810982B9 /* Nimble */;
-			targetProxy = A2E5864056F4B8C10E1D114C4C6D2594 /* PBXContainerItemProxy */;
+			target = 3F29A493B7BA5132E5D8B38018BF38B9 /* Nimble */;
+			targetProxy = AF2E4B54FF803F0F8C7D8919E4E31AAD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -742,7 +723,10 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -756,28 +740,64 @@
 			};
 			name = Release;
 		};
-		2AF8F3018C9A53228624A4372FB2F65B /* Debug */ = {
+		3E9815318E431EE13DD6B764F6971A24 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4EEC4A8ADD94ECA674DBC9D71D0742D7 /* Pods-AMKeyboardAvoidingLayoutConstraint_Example.debug.xcconfig */;
+			baseConfigurationReference = 4C52FAA0272A58788174D1665590101F /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-AMKeyboardAvoidingLayoutConstraint_Example/Info.plist";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AMKeyboardAvoidingLayoutConstraint_Example/Pods-AMKeyboardAvoidingLayoutConstraint_Example.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests/Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_default_pods_AMKeyboardAvoidingLayoutConstraint_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		809798FD8CECDABA5F2BC5D8AD3DCABB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEED6113A03465724B187FA88D327D23 /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example/Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_AMKeyboardAvoidingLayoutConstraint_Example;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_default_pods_AMKeyboardAvoidingLayoutConstraint_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -787,21 +807,119 @@
 			};
 			name = Debug;
 		};
-		3A931A7644CC926D3162E0BA9E4ACFA6 /* Debug */ = {
+		847FFA909F7A1E0A25A0772ED838BE27 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DA29D11CBEE6CEADAFC9F4E673DE2DE /* Nimble.xcconfig */;
+			baseConfigurationReference = 19FACAE3B39D908AEDFAE68BB28A0C3D /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example/Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_default_pods_AMKeyboardAvoidingLayoutConstraint_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A87BBC1C1A5D0E922957C1839F6EDD4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92421C5B774A9337B059AA2F2234F32D /* AMKeyboardAvoidingLayoutConstraint.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AMKeyboardAvoidingLayoutConstraint/AMKeyboardAvoidingLayoutConstraint-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AMKeyboardAvoidingLayoutConstraint/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AMKeyboardAvoidingLayoutConstraint/AMKeyboardAvoidingLayoutConstraint.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AMKeyboardAvoidingLayoutConstraint;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AFC317A2D120CF84ABE3F3261A2B7B1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BB0CBFE5E3037DEEB0003F3B276D3C8 /* Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests/Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_default_pods_AMKeyboardAvoidingLayoutConstraint_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BCB3A5EB2EE03FA46A96A2007B8C3703 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38BE40A67C5D42849226B3A214B0FFD1 /* Nimble.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Nimble/Nimble-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Nimble/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Nimble/Nimble.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -815,21 +933,23 @@
 			};
 			name = Debug;
 		};
-		4EED60597EF554CDF4BEEB31567C8279 /* Debug */ = {
+		C01A63D936A4660F61DC031EFABD918B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 92421C5B774A9337B059AA2F2234F32D /* AMKeyboardAvoidingLayoutConstraint.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/AMKeyboardAvoidingLayoutConstraint/AMKeyboardAvoidingLayoutConstraint-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/AMKeyboardAvoidingLayoutConstraint/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/AMKeyboardAvoidingLayoutConstraint/AMKeyboardAvoidingLayoutConstraint.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -843,37 +963,11 @@
 			};
 			name = Debug;
 		};
-		4EF564BEA62C557AE8F9B8C1693AA239 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DA29D11CBEE6CEADAFC9F4E673DE2DE /* Nimble.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Nimble/Nimble-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Nimble/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Nimble/Nimble.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Nimble;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -888,10 +982,12 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
@@ -909,140 +1005,27 @@
 			};
 			name = Debug;
 		};
-		61F58AB774701D2C326E0D1CE41A30FB /* Release */ = {
+		E2A1A5FF8E9BA6C52E12C83137547A76 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92421C5B774A9337B059AA2F2234F32D /* AMKeyboardAvoidingLayoutConstraint.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = AMKeyboardAvoidingLayoutConstraint;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		8A47CAD456260D5F636B07A25195DD83 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4AA83E2CDEBBD490F648B3353282CDF8 /* Pods-AMKeyboardAvoidingLayoutConstraint_Example.release.xcconfig */;
+			baseConfigurationReference = 38BE40A67C5D42849226B3A214B0FFD1 /* Nimble.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-AMKeyboardAvoidingLayoutConstraint_Example/Info.plist";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Nimble/Nimble-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Nimble/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AMKeyboardAvoidingLayoutConstraint_Example/Pods-AMKeyboardAvoidingLayoutConstraint_Example.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Nimble/Nimble.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_AMKeyboardAvoidingLayoutConstraint_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9397B37D6A8CE5F7D3ADBD75C0A86F87 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E06F22455D4578270C8C2DCB995FDC06 /* Pods-AMKeyboardAvoidingLayoutConstraint_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-AMKeyboardAvoidingLayoutConstraint_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AMKeyboardAvoidingLayoutConstraint_Tests/Pods-AMKeyboardAvoidingLayoutConstraint_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_AMKeyboardAvoidingLayoutConstraint_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		99D8F5900ADF287A15EE1218F45FD478 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92421C5B774A9337B059AA2F2234F32D /* AMKeyboardAvoidingLayoutConstraint.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = AMKeyboardAvoidingLayoutConstraint;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		BDF897D3BB7CE21DB18CB9921AC13BBD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56D8F5E0302285B2F47E37B3E6A5B1CD /* Pods-AMKeyboardAvoidingLayoutConstraint_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-AMKeyboardAvoidingLayoutConstraint_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AMKeyboardAvoidingLayoutConstraint_Tests/Pods-AMKeyboardAvoidingLayoutConstraint_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_AMKeyboardAvoidingLayoutConstraint_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C8981A8148A2E4865FB0B9B264FA87B6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92421C5B774A9337B059AA2F2234F32D /* AMKeyboardAvoidingLayoutConstraint.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AMKeyboardAvoidingLayoutConstraint/AMKeyboardAvoidingLayoutConstraint-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AMKeyboardAvoidingLayoutConstraint/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AMKeyboardAvoidingLayoutConstraint/AMKeyboardAvoidingLayoutConstraint.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = AMKeyboardAvoidingLayoutConstraint;
+				PRODUCT_NAME = Nimble;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1054,11 +1037,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D58B0204166DDF06B0FE8A9B1278766 /* Build configuration list for PBXNativeTarget "AMKeyboardAvoidingLayoutConstraint-AMKeyboardAvoidingLayoutConstraint" */ = {
+		07C301A49A5E31A99D1939421B54D850 /* Build configuration list for PBXNativeTarget "Nimble" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				99D8F5900ADF287A15EE1218F45FD478 /* Debug */,
-				61F58AB774701D2C326E0D1CE41A30FB /* Release */,
+				BCB3A5EB2EE03FA46A96A2007B8C3703 /* Debug */,
+				E2A1A5FF8E9BA6C52E12C83137547A76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		163126A7D9168432360FD27D8A2D9CD4 /* Build configuration list for PBXNativeTarget "Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				809798FD8CECDABA5F2BC5D8AD3DCABB /* Debug */,
+				847FFA909F7A1E0A25A0772ED838BE27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1066,44 +1058,26 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
-				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
+				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5F40F9DF6FEF89D78E48BEB885823EF6 /* Build configuration list for PBXNativeTarget "Pods-AMKeyboardAvoidingLayoutConstraint_Tests" */ = {
+		348E649857BF4B1180EB4909A40F3FB2 /* Build configuration list for PBXNativeTarget "Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9397B37D6A8CE5F7D3ADBD75C0A86F87 /* Debug */,
-				BDF897D3BB7CE21DB18CB9921AC13BBD /* Release */,
+				AFC317A2D120CF84ABE3F3261A2B7B1C /* Debug */,
+				3E9815318E431EE13DD6B764F6971A24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		60ACD1A923D690F69118A3F5E19FC59E /* Build configuration list for PBXNativeTarget "AMKeyboardAvoidingLayoutConstraint" */ = {
+		D48E1B83D58A20752D7F7AC868B9A22D /* Build configuration list for PBXNativeTarget "AMKeyboardAvoidingLayoutConstraint" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4EED60597EF554CDF4BEEB31567C8279 /* Debug */,
-				C8981A8148A2E4865FB0B9B264FA87B6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D4DCEA35595251EC6B9BDC29A571E7B2 /* Build configuration list for PBXNativeTarget "Nimble" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3A931A7644CC926D3162E0BA9E4ACFA6 /* Debug */,
-				4EF564BEA62C557AE8F9B8C1693AA239 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FBB868F1555D10DC45DC28F13A7FFABE /* Build configuration list for PBXNativeTarget "Pods-AMKeyboardAvoidingLayoutConstraint_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2AF8F3018C9A53228624A4372FB2F65B /* Debug */,
-				8A47CAD456260D5F636B07A25195DD83 /* Release */,
+				C01A63D936A4660F61DC031EFABD918B /* Debug */,
+				A87BBC1C1A5D0E922957C1839F6EDD4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
