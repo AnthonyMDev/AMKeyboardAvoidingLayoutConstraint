@@ -29,12 +29,12 @@ class KeyboardAvoidingLayoutConstraintTests: XCTestCase {
     let view = UIView(frame: CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: 100, height: 100)))
     viewController.view.addSubview(view)
     sut = KeyboardAvoidingLayoutConstraint(item: view,
-      attribute: .bottom,
-      relatedBy: .equal,
-      toItem: viewController.bottomLayoutGuide,
-      attribute: .top,
-      multiplier: 1.0,
-      constant: 50.0)
+                                           attribute: .bottom,
+                                           relatedBy: .equal,
+                                           toItem: viewController.bottomLayoutGuide,
+                                           attribute: .top,
+                                           multiplier: 1.0,
+                                           constant: 50.0)
     sut.pinnedView = view
     viewController.view.addConstraint(sut)
     
@@ -82,8 +82,8 @@ class KeyboardAvoidingLayoutConstraintTests: XCTestCase {
     
     // when
     NotificationCenter.default.post(name: NSNotification.Name.UIKeyboardWillShow,
-      object: window,
-      userInfo: [UIKeyboardFrameEndUserInfoKey: NSValue(cgRect: keyboardFrame)])
+                                    object: window,
+                                    userInfo: [UIKeyboardFrameEndUserInfoKey: NSValue(cgRect: keyboardFrame)])
     
     // then
     expect(self.sut.constant).to(equal(expected))
