@@ -1,0 +1,6 @@
+framework module Pods_default_pods_AMKeyboardAvoidingLayoutConstraint_Example {
+  umbrella header "Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

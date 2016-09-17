@@ -1,0 +1,6 @@
+framework module Pods_default_pods_AMKeyboardAvoidingLayoutConstraint_Tests {
+  umbrella header "Pods-default_pods-AMKeyboardAvoidingLayoutConstraint_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

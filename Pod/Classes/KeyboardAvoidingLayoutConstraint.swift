@@ -7,99 +7,101 @@
 
 import UIKit
 
-public class KeyboardAvoidingLayoutConstraint: NSLayoutConstraint {
-  
-  /*
-  *  MARK: - Instance Variables
-  */
-  
-  private var originalConstant: CGFloat!
-  
-  @IBOutlet public var pinnedView: UIView!
-  
-  /*
-  *  MARK: - Object Lifecycle
-  */
-  
-  public override func awakeFromNib() {
-    super.awakeFromNib()
+open class KeyboardAvoidingLayoutConstraint: NSLayoutConstraint {
     
-    originalConstant = constant
+    /*
+     *  MARK: - Instance Variables
+     */
     
-    registerForKeyboardNotifications()
-  }
-  
-  private func registerForKeyboardNotifications() {
-    NSNotificationCenter.defaultCenter().addObserver(self,
-        selector: "keyboardWillShow:",
-        name: UIKeyboardWillShowNotification,
-        object: pinnedView.window)
+    fileprivate var originalConstant: CGFloat!
     
-    NSNotificationCenter.defaultCenter().addObserver(self,
-        selector: "keyboardWillHide:",
-        name: UIKeyboardWillHideNotification,
-        object: pinnedView.window)
-  }
-  
-  deinit {
-    NSNotificationCenter.defaultCenter().removeObserver(self)
-  }
-  
-  /*
-  * MARK: - Show/Hide Keyboard
-  */
-  
-  func keyboardWillShow(notification: NSNotification) {
-    adjustConstantForKeyboard(true, notification: notification)
-  }
-  
-  func keyboardWillHide(notification: NSNotification) {
-    adjustConstantForKeyboard(false, notification: notification)
-  }
-  
-  private func adjustConstantForKeyboard(keyboardWillShow: Bool, notification: NSNotification) {
-    if let height = heightToAdjustForKeyboard(notification) {
-      pinnedView.superview?.layoutIfNeeded()
-      
-      if keyboardWillShow {
-        constant = originalConstant + height
-      } else {
-        constant = originalConstant
-      }
-      
-      let animationDuration: NSTimeInterval = notification.userInfo?[UIKeyboardAnimationDurationUserInfoKey]?.doubleValue ?? 0.2
-      
-      UIView.animateWithDuration(animationDuration) { [weak self] () -> Void in
-        self?.pinnedView.superview?.layoutIfNeeded()
-      }
+    @IBOutlet open var pinnedView: UIView!
+    
+    /*
+     *  MARK: - Object Lifecycle
+     */
+    
+    open override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        originalConstant = constant
+        
+        registerForKeyboardNotifications()
     }
-  }
-  
-  private func heightToAdjustForKeyboard(notification: NSNotification) -> CGFloat? {
-    if let value = notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue {
-      let keyboardFrame = value.CGRectValue()
-      var height = keyboardFrame.height
-      
-      if let tabBarHeight = findTabBarInWindow()?.frame.height {
-        height -= tabBarHeight
-      }
-      
-      if let navVC = pinnedView.window?.rootViewController as? UINavigationController where navVC.toolbarHidden == false {
-        height -= navVC.toolbar.frame.height
-      }
-      
-      return height
+    
+    fileprivate func registerForKeyboardNotifications() {
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(KeyboardAvoidingLayoutConstraint.keyboardWillShow(_:)),
+                                               name: NSNotification.Name.UIKeyboardWillShow,
+                                               object: pinnedView.window)
+        
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(KeyboardAvoidingLayoutConstraint.keyboardWillHide(_:)),
+                                               name: NSNotification.Name.UIKeyboardWillHide,
+                                               object: pinnedView.window)
     }
-    return nil
-  }
-  
-  private func findTabBarInWindow() -> UITabBar? {
-    if let tabBarVC = pinnedView.window?.rootViewController as? UITabBarController {
-      return tabBarVC.tabBar
-      
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
-    return nil
-  }
-  
+    
+    /*
+     * MARK: - Show/Hide Keyboard
+     */
+    
+    func keyboardWillShow(_ notification: Notification) {
+        adjustConstantForKeyboard(true, notification: notification)
+    }
+    
+    func keyboardWillHide(_ notification: Notification) {
+        adjustConstantForKeyboard(false, notification: notification)
+    }
+    
+    fileprivate func adjustConstantForKeyboard(_ keyboardWillShow: Bool, notification: Notification) {
+        if let height = heightToAdjustForKeyboard(notification) {
+            pinnedView.superview?.layoutIfNeeded()
+            
+            if keyboardWillShow {
+                constant = originalConstant + height
+            } else {
+                constant = originalConstant
+            }
+            
+            let animationDuration: TimeInterval = (notification.userInfo?[UIKeyboardAnimationDurationUserInfoKey] as? Double) ?? 0.2
+            
+            UIView.animate(withDuration: animationDuration) { [weak self] () -> Void in
+                self?.pinnedView.superview?.layoutIfNeeded()
+            }
+        }
+    }
+    
+    fileprivate func heightToAdjustForKeyboard(_ notification: Notification) -> CGFloat? {
+        if let value = notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue {
+            let keyboardFrame = value.cgRectValue
+            var height = keyboardFrame.height
+            
+            if let tabBarHeight = findTabBarInWindow()?.frame.height {
+                height -= tabBarHeight
+            }
+            
+            if let navVC = pinnedView.window?.rootViewController as? UINavigationController,
+                           navVC.isToolbarHidden == false {
+                
+                height -= navVC.toolbar.frame.height
+            }
+            
+            return height
+        }
+        return nil
+    }
+    
+    fileprivate func findTabBarInWindow() -> UITabBar? {
+        if let tabBarVC = pinnedView.window?.rootViewController as? UITabBarController {
+            return tabBarVC.tabBar
+            
+        }
+        return nil
+    }
+    
 }
 

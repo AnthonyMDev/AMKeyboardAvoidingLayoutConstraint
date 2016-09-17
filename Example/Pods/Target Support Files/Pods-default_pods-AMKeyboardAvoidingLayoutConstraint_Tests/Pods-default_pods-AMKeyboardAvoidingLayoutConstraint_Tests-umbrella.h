@@ -1,0 +1,6 @@
+#import <UIKit/UIKit.h>
+
+
+FOUNDATION_EXPORT double Pods_default_pods_AMKeyboardAvoidingLayoutConstraint_TestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_default_pods_AMKeyboardAvoidingLayoutConstraint_TestsVersionString[];
+
