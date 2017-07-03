@@ -98,13 +98,13 @@ public final class KeyboardAvoidingLayoutConstraint: NSLayoutConstraint {
      */
     
     func keyboardWillChange(_ notification: Notification) {
-        guard let newConstant = newConstantForKeyboardChange(notification),
-            !isRotating &&
-            newConstant != self.constant else { return }
+        guard !isRotating else { return }
         
         let viewToLayout = avoidingView.superview ?? avoidingView
-        
         viewToLayout?.layoutIfNeeded()
+        
+        guard let newConstant = newConstantForKeyboardChange(notification),
+            newConstant != self.constant else { return }
         
         let duration: TimeInterval = (notification.userInfo?[UIKeyboardAnimationDurationUserInfoKey] as? Double) ?? 0.2
         
