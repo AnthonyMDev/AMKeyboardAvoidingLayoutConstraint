@@ -1,12 +1,8 @@
+platform :ios, '9.0'
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-target 'AMKeyboardAvoidingLayoutConstraint_Example', :exclusive => true do
-  pod "AMKeyboardAvoidingLayoutConstraint", :path => "../"
-end
+pod "AMKeyboardAvoidingLayoutConstraint", :path => "../"
 
-target 'AMKeyboardAvoidingLayoutConstraint_Tests', :exclusive => true do
-  pod "AMKeyboardAvoidingLayoutConstraint", :path => "../"
-  
-  pod 'Nimble', '~> 3.0'
+target 'AMKeyboardAvoidingLayoutConstraint_Example' do  
 end
