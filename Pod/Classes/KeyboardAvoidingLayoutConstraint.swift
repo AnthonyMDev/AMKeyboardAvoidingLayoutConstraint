@@ -85,11 +85,11 @@ public final class KeyboardAvoidingLayoutConstraint: NSLayoutConstraint {
         NotificationCenter.default.removeObserver(self)
     }
     
-    func willRotate(_ notification: Notification) {
+    @objc func willRotate(_ notification: Notification) {
         isRotating = true
     }
     
-    func didRotate(_ notification: Notification) {
+    @objc func didRotate(_ notification: Notification) {
         isRotating = false
     }
     
@@ -97,7 +97,7 @@ public final class KeyboardAvoidingLayoutConstraint: NSLayoutConstraint {
      * MARK: - Show/Hide Keyboard
      */
     
-    func keyboardWillChange(_ notification: Notification) {
+    @objc func keyboardWillChange(_ notification: Notification) {
         guard !isRotating else { return }
         
         let viewToLayout = avoidingView.superview ?? avoidingView
