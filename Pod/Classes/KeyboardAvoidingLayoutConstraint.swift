@@ -67,17 +67,17 @@ public final class KeyboardAvoidingLayoutConstraint: NSLayoutConstraint {
     fileprivate func registerForKeyboardNotifications() {
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(keyboardWillChange(_:)),
-                                               name: NSNotification.Name.UIKeyboardWillChangeFrame,
+                                               name: UIResponder.keyboardWillChangeFrameNotification,
                                                object: nil)
         
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(willRotate(_:)),
-                                               name: NSNotification.Name.UIApplicationWillChangeStatusBarOrientation,
+                                               name: UIApplication.willChangeStatusBarOrientationNotification,
                                                object: nil)
         
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(didRotate(_:)),
-                                               name: NSNotification.Name.UIApplicationDidChangeStatusBarOrientation,
+                                               name: UIApplication.didChangeStatusBarOrientationNotification,
                                                object: nil)
     }
     
@@ -106,7 +106,7 @@ public final class KeyboardAvoidingLayoutConstraint: NSLayoutConstraint {
         guard let newConstant = newConstantForKeyboardChange(notification),
             newConstant != self.constant else { return }
         
-        let duration: TimeInterval = (notification.userInfo?[UIKeyboardAnimationDurationUserInfoKey] as? Double) ?? 0.2
+        let duration: TimeInterval = (notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double) ?? 0.2
         
         UIView.animate(withDuration: duration,
                        delay: 0.0, options: animationOptions(notification),
@@ -118,7 +118,7 @@ public final class KeyboardAvoidingLayoutConstraint: NSLayoutConstraint {
     }
     
     private func newConstantForKeyboardChange(_ notification: Notification) -> CGFloat? {
-        guard let endFrame = notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? CGRect,
+        guard let endFrame = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect,
             let keyboardFrame = UIApplication.shared.keyWindow?.convert(endFrame, to: nil) else {
                 return nil
         }
@@ -133,11 +133,11 @@ public final class KeyboardAvoidingLayoutConstraint: NSLayoutConstraint {
         return heightDifference != 0 ? constant - heightDifference : nil
     }
     
-    private func animationOptions(_ notification: Notification) -> UIViewAnimationOptions {
-        var options: UIViewAnimationOptions = .beginFromCurrentState
+    private func animationOptions(_ notification: Notification) -> UIView.AnimationOptions {
+        var options: UIView.AnimationOptions = .beginFromCurrentState
         
-        if let animationCurve = UIViewAnimationCurve(rawValue: (notification.userInfo![UIKeyboardAnimationCurveUserInfoKey] as? Int) ?? 0) {
         
+        if let animationCurve = animationCurve(from: notification)  {
             switch animationCurve {
             case .easeIn: options.insert(.curveEaseIn)
             case .easeOut: options.insert(.curveEaseOut)
@@ -147,6 +147,16 @@ public final class KeyboardAvoidingLayoutConstraint: NSLayoutConstraint {
         }
         
         return options
+    }
+    
+    /// The check on the rawValue coming from the `userInfo` is a workaround
+    /// for the issue detailed here: https://openradar.appspot.com/42419517
+    private func animationCurve(from notification: Notification) -> UIView.AnimationCurve? {
+        guard let raw = notification.userInfo![UIResponder.keyboardAnimationCurveUserInfoKey] as? Int, raw < 4 else {
+            return UIView.AnimationCurve.easeInOut
+        }
+        
+        return UIView.AnimationCurve(rawValue: raw)
     }
     
 }
